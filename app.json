@@ -69,6 +69,11 @@
             "description": "Bot token, get it from @BotFather.",
             "value": ""
             
+        },
+        "SUDO_USERS": {
+            "description": "Owner Id",
+            "value": ""
+            
         }
     },
     "buildpacks": [
