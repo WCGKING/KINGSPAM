@@ -1,4 +1,4 @@
-#SPAM BOTS 2.0
+#ꜱᴘᴀᴍʙᴏᴛꜱ 2.0
 
 <p align="center">
   <img src="https://telegra.ph/file/8626f33867fc155eaa404.jpg">
@@ -28,9 +28,9 @@
 
 -------------------------------------------------
 
-## 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 -[USTAD🇮🇳](https://t.me/USTAD_OP)
-## contributor -[Aditya🇮🇳](https://t.me/Paramatin7)
-## SUPPORTER -[Amaan🇮🇳](https://t.me/CoPYLess786)
+## ᴄʀᴇᴀᴛᴏʀ -[ᴜꜱᴛᴀᴅ🇮🇳](https://t.me/USTAD_OP)
+## ᴄᴏɴᴛʀɪʙᴜᴛᴏʀ -[ᴀᴅɪᴛʏᴀ🇮🇳](https://t.me/Paramatin7)
+## ꜱᴜᴘᴘᴏʀᴛᴇʀ -[ᴀᴍᴀᴀɴ🇮🇳](https://t.me/CoPYLess786)
 -------------------------------------------------
 
 ## 🚀 Deploy on Heroku 
