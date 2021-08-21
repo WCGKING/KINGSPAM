@@ -31,7 +31,8 @@
 ## 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 -[USTAD](https://t.me/USTAD_OP)
 
 -------------------------------------------------
-##COMMANDS
+#COMMANDS
+
 /PING (TO CHECK BOTS ARE WORKING)
 /SPAM (NUMBER OF MSG) (MESSAGE TO SPAM) [TO SPAM MESSAGE(LIMIT 100)]
 /BIGSPAM (NUMBER OF MSG) (MESSAGE TO SPAM) [TO SPAM MESSAGE]
