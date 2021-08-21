@@ -28,8 +28,9 @@
 
 -------------------------------------------------
 
-## 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 -[USTAD](https://t.me/USTAD_OP)
-
+## 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 -[USTAD🇮🇳](https://t.me/USTAD_OP)
+## contributor -[Aditya🇮🇳](https://t.me/Paramatin7)
+## SUPPORTER -[Amaan🇮🇳](https://t.me/CoPYLess786)
 -------------------------------------------------
 
 ## 🚀 Deploy on Heroku 
