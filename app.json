@@ -58,7 +58,7 @@
         "BOT_TOKEN8": {
             "description": "Bot token, get it from @BotFather.",
             "value": ""
-            "
+            
         },
         "BOT_TOKEN9": {
             "description": "Bot token, get it from @BotFather.",
