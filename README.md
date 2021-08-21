@@ -31,13 +31,6 @@
 ## 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 -[USTAD](https://t.me/USTAD_OP)
 
 -------------------------------------------------
-#COMMANDS
-
-/PING(TO CHECK BOTS ARE WORKING)
-
-/SPAM(NUMBER OF MSG)(MESSAGE TO SPAM)[TO SPAM MESSAGE(LIMIT 100)]
-
-/BIGSPAM(NUMBER OF MSG)(MESSAGE TO SPAM)[TO SPAM MESSAGE]
 
 ## 🚀 Deploy on Heroku 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dangerousjatt/DEADLY-SPAM-BOT.git)
