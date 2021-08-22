@@ -5,7 +5,36 @@ SMEX_USERS = []
 for x in SUDO_USERS:
     SMEX_USERS.append(x)
 
-
+@UstaD.on(
+    events.NewMessage(pattern="^/restart", func=lambda e: e.sender_id in SMEX_USERS)
+)
+@UstaD2.on(
+    events.NewMessage(pattern="^/restart", func=lambda e: e.sender_id in SMEX_USERS)
+)
+@UstaD3.on(
+    events.NewMessage(pattern="^/restart", func=lambda e: e.sender_id in SMEX_USERS)
+)
+@UstaD4.on(
+    events.NewMessage(pattern="^/restart", func=lambda e: e.sender_id in SMEX_USERS)
+)
+@UstaD5.on(
+    events.NewMessage(pattern="^/restart", func=lambda e: e.sender_id in SMEX_USERS)
+)
+@UstaD6.on(
+    events.NewMessage(pattern="^/restart", func=lambda e: e.sender_id in SMEX_USERS)
+)
+@UstaD7.on(
+    events.NewMessage(pattern="^/restart", func=lambda e: e.sender_id in SMEX_USERS)
+)
+@UstaD8.on(
+    events.NewMessage(pattern="^/restart", func=lambda e: e.sender_id in SMEX_USERS)
+)
+@UstaD9.on(
+    events.NewMessage(pattern="^/restart", func=lambda e: e.sender_id in SMEX_USERS)
+)
+@UstaD10.on(
+    events.NewMessage(pattern="^/restart", func=lambda e: e.sender_id in SMEX_USERS)
+)
 async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = "𝐑𝐄𝐒𝐓𝐀𝐑𝐓𝐄𝐃\n\𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
