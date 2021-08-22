@@ -36,33 +36,6 @@ RESTARTING_APP = "re-starting heroku application"
 @UstaD.on(
     events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
 )
-@UstaD2.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD3.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD4.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD5.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD6.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD7.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD8.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD9.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD10.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
 async def updater(message):
     try:
         repo = git.Repo()
@@ -107,7 +80,7 @@ async def updater(message):
     if len(message_one) > 4095:
         with open("change.log", "w+", encoding="utf8") as out_file:
             out_file.write(str(message_one))
-        await tgbot.send_message(
+        await UstaD.send_message(
             message.chat_id, document="change.log", caption=message_two
         )
         os.remove("change.log")
@@ -142,7 +115,7 @@ async def updater(message):
                 else:
                     remote = repo.create_remote("heroku", heroku_git_url)
                 asyncio.get_event_loop().create_task(
-                    deploy_start(tgbot, message, HEROKU_GIT_REF_SPEC, remote)
+                    deploy_start(UstaD, message, HEROKU_GIT_REF_SPEC, remote)
                 )
 
             else:
@@ -164,12 +137,11 @@ def generate_change_log(git_repo, diff_marker):
     return out_put_str
 
 
-async def deploy_start(tgbot, message, refspec, remote):
+async def deploy_start(UstaD, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit(
         "Updated your 𝐒𝐏𝐀𝐌𝐁𝐎𝐓 successfully sur!!!\nNow type `/ping` after 5 mins to check if I'm on🚶😏"
     )
     await remote.push(refspec=refspec)
-    await tgbot.disconnect()
+    await UstaD.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
-  
