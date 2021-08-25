@@ -1,5 +1,3 @@
-#
-
 <p align="center">
   <img src="https://telegra.ph/file/8626f33867fc155eaa404.jpg">
 </p>
