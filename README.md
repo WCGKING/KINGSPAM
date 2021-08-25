@@ -1,4 +1,4 @@
-#ꜱᴘᴀᴍʙᴏᴛꜱ 2.0
+#
 
 <p align="center">
   <img src="https://telegra.ph/file/8626f33867fc155eaa404.jpg">
@@ -23,8 +23,8 @@
 
 ## 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 
                           
-<a href="https://t.me/USTAD_SPAM_BOT_SUPPORT"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-red.svg?logo=Telegram"></a>
-<a href="https://t.me/USTAD_SPAM_BOTS"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-red.svg?logo=Telegram"></a>
+<a href="https://t.me/deadly_spam_bot"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-red.svg?logo=Telegram"></a>
+<a href="https://t.me/deadly_spammer"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-red.svg?logo=Telegram"></a>
 
 -------------------------------------------------
 
