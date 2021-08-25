@@ -25,7 +25,7 @@
 <a href="https://t.me/deadly_spammer"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-red.svg?logo=Telegram"></a>
 
 -------------------------------------------------
-
+## 𝙾𝚆𝙽𝙴𝚁 -[𝚂𝙰𝙼𝙴𝙴𝚁🇮🇳](https://t.me/OFFICIAL_SAMEER)
 ## ᴄʀᴇᴀᴛᴏʀ -[ᴜꜱᴛᴀᴅ🇮🇳](https://t.me/USTAD_OP)
 ## ᴄᴏɴᴛʀɪʙᴜᴛᴏʀ -[ᴀᴅɪᴛʏᴀ🇮🇳](https://t.me/Paramatin7)
 ## ꜱᴜᴘᴘᴏʀᴛᴇʀ -[ᴀᴍᴀᴀɴ🇮🇳](https://t.me/CoPYLess786)
