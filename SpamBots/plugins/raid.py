@@ -41,6 +41,7 @@ for x in SUDO_USERS:
 )
 @UstaD10.on(
     events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
+)
 async def spam(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -135,6 +136,7 @@ async def _(event):
 )
 @UstaD10.on(
     events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
+)
 async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
@@ -194,6 +196,7 @@ async def _(e):
 )
 @UstaD10.on(
     events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+)
 async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
