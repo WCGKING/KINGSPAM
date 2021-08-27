@@ -202,12 +202,12 @@ async def _(e):
     events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 async def _(e):
-    global que
+    global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None)
+            return await e.reply(usage, parse_mode=None, link_preview=None )
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        await e.get_reply_message()
+        smex = await e.get_reply_message()
         if len(e.text) > 12:
             message = str(Ustad[0])
             a = await e.client.get_entity(message)
@@ -215,20 +215,21 @@ async def _(e):
             try:
                 queue = que.get(g)
                 queue.pop(0)
-            except Exception:
+            except Exception as f:
                 pass
             text = "De-Activated Reply Raid"
-            await e.reply(text, parse_mode=None, link_preview=None)
-        elif e.reply_to_msg_id:
+            await e.reply(text, parse_mode=None, link_preview=None )
+        elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             try:
                 queue = que.get(g)
                 queue.pop(0)
-            except Exception:
+            except Exception as f:
                 pass
             text = "De-Activated Reply Raid"
-            await e.reply(text, parse_mode=None, link_preview=None)
+            await e.reply(text, parse_mode=None, link_preview=None )
         else:
-            await e.reply(usage, parse_mode=None, link_preview=None)
+            await e.reply(usage, parse_mode=None, link_preview=None )
+    
