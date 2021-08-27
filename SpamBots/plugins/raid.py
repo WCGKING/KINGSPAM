@@ -10,6 +10,8 @@ SMEX_USERS = []
 for x in SUDO_USERS:
     SMEX_USERS.append(x)
 
+que = {}
+
 
 
 @UstaD.on(
