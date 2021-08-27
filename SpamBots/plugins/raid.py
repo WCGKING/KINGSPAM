@@ -46,20 +46,20 @@ que = {}
 @UstaD10.on(
     events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
 )
-async def spam(e):
+async def spam(e):  
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        Sandhu = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(Sandhu) == 2:
-            message = str(Sandhu[1])
+        if len(Ustad) == 2:
+            message = str(Ustad[1])
             print(message)
             a = await e.client.get_entity(message)
             g = a.id
             c = a.first_name
             username = f"[{c}](tg://user?id={g})"
-            counter = int(Sandhu[0])
+            counter = int(Ustad[0])
             for _ in range(counter):
                 reply = random.choice(RAID)
                 caption = f"{username} {reply}"
@@ -71,7 +71,7 @@ async def spam(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             c = b.first_name
-            counter = int(Sandhu[0])
+            counter = int(Ustad[0])
             username = f"[{c}](tg://user?id={g})"
             for _ in range(counter):
                 reply = random.choice(RAID)
@@ -81,8 +81,6 @@ async def spam(e):
                     await asyncio.sleep(0.3)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
-
-
 
 
 
