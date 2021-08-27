@@ -172,34 +172,34 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None)
 
 @UstaD.on(
-    events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 @UstaD2.on(
-    events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 @UstaD3.on(
-    events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 @UstaD4.on(
-    events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 @UstaD5.on(
-    events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 @UstaD6.on(
-    events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 @UstaD7.on(
-    events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 @UstaD8.on(
-    events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 @UstaD9.on(
-    events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 @UstaD10.on(
-    events.NewMessage(pattern="^/replydreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
 )
 async def _(e):
     global que
