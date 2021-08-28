@@ -45,9 +45,8 @@ def get_readable_time(seconds: int) -> str:
 @UstaD3.on(
     events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
 )
-@UstaD4.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
+@UstaD4.on(events.NewMessagebot.on(pattern="ping"))
+
 @UstaD5.on(
     events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
 )
