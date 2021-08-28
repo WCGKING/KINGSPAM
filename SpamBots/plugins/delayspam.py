@@ -27,36 +27,16 @@ for x in SUDO_USERS:
 
 
 
-@UstaD.on(
-    events.NewMessage(pattern="^/delayspam", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD2.on(
-    events.NewMessage(pattern="^/delayspam", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD3.on(
-    events.NewMessage(pattern="^/delayspam", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD4.on(
-    events.NewMessage(pattern="^/delayspam", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD5.on(
-    events.NewMessage(pattern="^/delayspam", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD6.on(
-    events.NewMessage(pattern="^/delayspam", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD7.on(
-    events.NewMessage(pattern="^/delayspam", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD8.on(
-    events.NewMessage(pattern="^/delayspam", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD9.on(
-    events.NewMessage(pattern="^/delayspam", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD10.on(
-    events.NewMessage(pattern="^/delayspam", func=lambda e: e.sender_id in SMEX_USERS)
-)
+@UstaD.on(events.NewMessage(pattern="/delayspam"))
+@UstaD2.on(events.NewMessage(pattern="/delayspam"))
+@UstaD3.on(events.NewMessage(pattern="/delayspam"))
+@UstaD4.on(events.NewMessage(pattern="/delayspam"))
+@UstaD5.on(events.NewMessage(pattern="/delayspam"))
+@UstaD6.on(events.NewMessage(pattern="/delayspam"))
+@UstaD7.on(events.NewMessage(pattern="/delayspam"))
+@UstaD8.on(events.NewMessage(pattern="/delayspam"))
+@UstaD9.on(events.NewMessage(pattern="/delayspam"))
+@UstaD10.on(events.NewMessage(pattern="/delayspam"))
 async def spam(e):    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
