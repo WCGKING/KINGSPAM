@@ -32,18 +32,23 @@ HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
 RESTARTING_APP = "re-starting heroku application"
 # -- Constants End -- #
 
-@UstaD.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
+@UstaD.on(events.NewMessage(pattern="/update"))
+@UstaD2.on(events.NewMessage(pattern="/update"))
+@UstaD3.on(events.NewMessage(pattern="/update"))
+@UstaD4.on(events.NewMessage(pattern="/update"))
+@UstaD5.on(events.NewMessage(pattern="/update"))
+@UstaD6.on(events.NewMessage(pattern="/update"))
+@UstaD7.on(events.NewMessage(pattern="/update"))
+@UstaD8.on(events.NewMessage(pattern="/update"))
+@UstaD9.on(events.NewMessage(pattern="/update"))
+@UstaD10.on(events.NewMessage(pattern="/update"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
-@UstaD.on(
-    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
-)
+@UstaD.on(events.NewMessage(pattern="/update"))
 async def updater(message):
     try:
         repo = git.Repo()

@@ -36,36 +36,16 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@UstaD.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD2.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD3.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD4.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD5.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD6.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD7.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD8.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD9.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD10.on(
-    events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id in SMEX_USERS)
-)
+@UstaD.on(events.NewMessage(pattern="/ping"))
+@UstaD2.on(events.NewMessage(pattern="/ping"))
+@UstaD3.on(events.NewMessage(pattern="/ping"))
+@UstaD4.on(events.NewMessage(pattern="/ping"))
+@UstaD5.on(events.NewMessage(pattern="/ping"))
+@UstaD6.on(events.NewMessage(pattern="/ping"))
+@UstaD7.on(events.NewMessage(pattern="/ping"))
+@UstaD8.on(events.NewMessage(pattern="/ping"))
+@UstaD9.on(events.NewMessage(pattern="/ping"))
+@UstaD10.on(events.NewMessage(pattern="/ping"))
 async def ping(e):
         start = datetime.now()
         text = "Pong!"
