@@ -16,36 +16,16 @@ que = {}
 
 
 
-@UstaD.on(
-    events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD2.on(
-    events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD3.on(
-    events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD4.on(
-    events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD5.on(
-    events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD6.on(
-    events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD7.on(
-    events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD8.on(
-    events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD9.on(
-    events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD10.on(
-    events.NewMessage(pattern="^/raid", func=lambda e: e.sender_id in SMEX_USERS)
-)
+@UstaD.on(events.NewMessage(pattern="/raid"))
+@UstaD2.on(events.NewMessage(pattern="/raid"))
+@UstaD3.on(events.NewMessage(pattern="/raid"))
+@UstaD4.on(events.NewMessage(pattern="/raid"))
+@UstaD5.on(events.NewMessage(pattern="/raid"))
+@UstaD6.on(events.NewMessage(pattern="/raid"))
+@UstaD7.on(events.NewMessage(pattern="/raid"))
+@UstaD8.on(events.NewMessage(pattern="/raid"))
+@UstaD9.on(events.NewMessage(pattern="/raid"))
+@UstaD10.on(events.NewMessage(pattern="/raid"))
 async def spam(e):  
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -109,36 +89,16 @@ async def _(event):
         )
 
 
-@UstaD.on(
-    events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD2.on(
-    events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD3.on(
-    events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD4.on(
-    events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD5.on(
-    events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD6.on(
-    events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD7.on(
-    events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD8.on(
-    events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD9.on(
-    events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD10.on(
-    events.NewMessage(pattern="^/replyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
+@UstaD.on(events.NewMessage(pattern="/replyraid"))
+@UstaD2.on(events.NewMessage(pattern="/replyraid"))
+@UstaD3.on(events.NewMessage(pattern="/replyraid"))
+@UstaD4.on(events.NewMessage(pattern="/replyraid"))
+@UstaD5.on(events.NewMessage(pattern="/replyraid"))
+@UstaD6.on(events.NewMessage(pattern="/replyraid"))
+@UstaD7.on(events.NewMessage(pattern="/replyraid"))
+@UstaD8.on(events.NewMessage(pattern="/replyraid"))
+@UstaD9.on(events.NewMessage(pattern="/replyraid"))
+@UstaD10.on(events.NewMessage(pattern="/replyraid"))
 async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
@@ -169,36 +129,16 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
 
-@UstaD.on(
-    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD2.on(
-    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD3.on(
-    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD4.on(
-    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD5.on(
-    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD6.on(
-    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD7.on(
-    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD8.on(
-    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD9.on(
-    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
-@UstaD10.on(
-    events.NewMessage(pattern="^/dreplyraid", func=lambda e: e.sender_id in SMEX_USERS)
-)
+@UstaD.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD2.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD3.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD4.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD5.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD6.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD7.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD8.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD9.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD10.on(events.NewMessage(pattern="/dreplyraid"))
 async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
