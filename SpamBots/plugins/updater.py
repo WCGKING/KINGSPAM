@@ -53,7 +53,7 @@ async def restart(e):
     events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
 )
 async def updater(message):
-      try:
+    try:
         repo = git.Repo()
     except git.exc.InvalidGitRepositoryError as e:
         repo = git.Repo.init()
