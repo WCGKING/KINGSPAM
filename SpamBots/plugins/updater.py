@@ -48,7 +48,10 @@ async def restart(e):
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
-@UstaD.on(events.NewMessage(pattern="/update"))
+
+@UstaD.on(
+    events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
+)
 async def updater(message):
     try:
         repo = git.Repo()
