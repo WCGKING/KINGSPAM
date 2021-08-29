@@ -50,7 +50,8 @@ async def restart(e):
 
 @UstaD.on(events.NewMessage(pattern="/update"))
 async def updater(message):
-    try:
+    if e.sender_id in SMEX_USERS:
+      try:
         repo = git.Repo()
     except git.exc.InvalidGitRepositoryError as e:
         repo = git.Repo.init()
