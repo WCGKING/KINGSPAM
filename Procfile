@@ -1,1 +1,1 @@
-UstaD: python -m SpamBots
+UstaD: python -m UstadOp
