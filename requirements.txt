@@ -1,3 +1,4 @@
+UstadOp
 python-decouple
 telethon
 cryptg
