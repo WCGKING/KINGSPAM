@@ -1,4 +1,4 @@
-UstadOp
+UstadOp==1.0
 python-decouple
 telethon
 cryptg
