@@ -1,3 +1,4 @@
+OpUstad==0.1
 python-decouple
 telethon
 cryptg
