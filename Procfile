@@ -1,1 +1,1 @@
-UstaD: python -m UstadOp
+UstaD: python -m OpUstad
