@@ -1,4 +1,4 @@
-OpUstad
+OpUstad==2.0
 python-decouple
 telethon
 cryptg
