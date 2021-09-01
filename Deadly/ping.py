@@ -52,5 +52,6 @@ async def ping(e):
         end = datetime.now()
         ms = (end-start).microseconds / 1000
         await event.edit(f"🤖 🇵 🇴 🇳 🇬 !\n`{ms}` 𝗺𝘀")
-else:
+
+ else:
     pass
