@@ -57,3 +57,5 @@ if UstaD:
            else:
                await e.reply(usage, parse_mode=None, link_preview=None)
 
+if UstaD = None :
+   pass
