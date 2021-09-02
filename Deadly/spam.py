@@ -56,3 +56,6 @@ if UstaD:
                await asyncio.wait([e.respond(message) for i in range(counter)])
            else:
                await e.reply(usage, parse_mode=None, link_preview=None)
+
+if UstaD=None:
+   pass
