@@ -16,7 +16,7 @@ que = {}
 
 if UstaD:
  @UstaD.on(events.NewMessage(pattern="/replyraid"))
-  async def _(e):
+ async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -54,9 +54,9 @@ if UstaD:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -66,7 +66,7 @@ if UstaD:
 
 if UstaD2:
  @UstaD2.on(events.NewMessage(pattern="/replyraid"))
-  async def _(e):
+ async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -104,9 +104,9 @@ if UstaD2:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -116,7 +116,7 @@ if UstaD2:
 
 if UstaD3:
  @UstaD3.on(events.NewMessage(pattern="/replyraid"))
-  async def _(e):
+ async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -154,9 +154,9 @@ if UstaD3:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -166,7 +166,7 @@ if UstaD3:
 
 if UstaD4:
  @UstaD4.on(events.NewMessage(pattern="/replyraid"))
-  async def _(e):
+ async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -204,9 +204,9 @@ if UstaD4:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -216,7 +216,7 @@ if UstaD4:
 
 if UstaD5:
  @UstaD5.on(events.NewMessage(pattern="/replyraid"))
-  async def _(e):
+ async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -254,9 +254,9 @@ if UstaD5:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -266,7 +266,7 @@ if UstaD5:
  
 if UstaD6:
  @UstaD6.on(events.NewMessage(pattern="/replyraid"))
-  async def _(e):
+ async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -304,9 +304,9 @@ if UstaD6:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -316,7 +316,7 @@ if UstaD6:
 
 if UstaD7:
  @UstaD7.on(events.NewMessage(pattern="/replyraid"))
-  async def _(e):
+ async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -354,9 +354,9 @@ if UstaD7:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -366,7 +366,7 @@ if UstaD7:
 
 if UstaD8:
  @UstaD8.on(events.NewMessage(pattern="/replyraid"))
-  async def _(e):
+ async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -404,9 +404,9 @@ if UstaD8:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -416,7 +416,7 @@ if UstaD8:
 
 if UstaD9:
  @UstaD9.on(events.NewMessage(pattern="/replyraid"))
-  async def _(e):
+ async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -454,9 +454,9 @@ if UstaD9:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -466,7 +466,7 @@ if UstaD9:
 
 if UstaD10:
  @UstaD10.on(events.NewMessage(pattern="/replyraid"))
-  async def _(e):
+ async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -504,9 +504,9 @@ if UstaD10:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -515,7 +515,7 @@ if UstaD10:
 
 if UstaD:
  @UstaD.on(events.NewMessage(pattern="/raid"))
-  async def _(e):
+ async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -555,9 +555,9 @@ if UstaD:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -567,7 +567,7 @@ if UstaD:
 
 if UstaD2:
  @UstaD2.on(events.NewMessage(pattern="/raid"))
-  async def _(e):
+ async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -607,9 +607,9 @@ if UstaD2:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -619,7 +619,7 @@ if UstaD2:
 
 if UstaD3:
  @UstaD3.on(events.NewMessage(pattern="/raid"))
-  async def _(e):
+ async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -659,9 +659,9 @@ if UstaD3:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -671,7 +671,7 @@ if UstaD3:
 
 if UstaD4:
  @UstaD4.on(events.NewMessage(pattern="/raid"))
-  async def _(e):
+ async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -711,9 +711,9 @@ if UstaD4:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -723,7 +723,7 @@ if UstaD4:
 
 if UstaD5:
  @UstaD5.on(events.NewMessage(pattern="/raid"))
-  async def _(e):
+ async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -763,9 +763,9 @@ if UstaD5:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -775,7 +775,7 @@ if UstaD5:
  
 if UstaD6:
  @UstaD6.on(events.NewMessage(pattern="/raid"))
-  async def _(e):
+ async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -815,9 +815,9 @@ if UstaD6:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -827,7 +827,7 @@ if UstaD6:
 
 if UstaD7:
  @UstaD7.on(events.NewMessage(pattern="/raid"))
-  async def _(e):
+ async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -867,9 +867,9 @@ if UstaD7:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -879,7 +879,7 @@ if UstaD7:
 
 if UstaD8:
  @UstaD8.on(events.NewMessage(pattern="/raid"))
-  async def _(e):
+ async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -919,9 +919,9 @@ if UstaD8:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -931,7 +931,7 @@ if UstaD8:
 
 if UstaD9:
  @UstaD9.on(events.NewMessage(pattern="/raid"))
-  async def _(e):
+ async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -971,9 +971,9 @@ if UstaD9:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
@@ -983,7 +983,7 @@ if UstaD9:
 
 if UstaD10:
  @UstaD10.on(events.NewMessage(pattern="/raid"))
-  async def _(e):
+ async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -1023,9 +1023,9 @@ if UstaD10:
     queue = que.get(event.sender_id)
     if not queue:
         return
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await asyncio.sleep(0.3)
-    async with event.client.action(event.chat_id, "typing"):
+   async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
             message="""{}""".format(random.choice(RRAID)),
