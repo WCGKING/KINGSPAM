@@ -27,17 +27,8 @@ for x in SUDO_USERS:
     SMEX_USERS.append(x)
 
 
-if:
+if UstaD:
  @UstaD.on(events.NewMessage(pattern="/bigspam"))
- @UstaD2.on(events.NewMessage(pattern="/bigspam"))
- @UstaD3.on(events.NewMessage(pattern="/bigspam"))
- @UstaD4.on(events.NewMessage(pattern="/bigspam"))
- @UstaD5.on(events.NewMessage(pattern="/bigspam"))
- @UstaD6.on(events.NewMessage(pattern="/bigspam"))
- @UstaD7.on(events.NewMessage(pattern="/bigspam"))
- @UstaD8.on(events.NewMessage(pattern="/bigspam"))
- @UstaD9.on(events.NewMessage(pattern="/bigspam"))
- @UstaD10.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
