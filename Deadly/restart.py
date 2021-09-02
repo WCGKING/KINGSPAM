@@ -17,9 +17,9 @@ if UstaD:
              try:
                 await UstaD.disconnect()
              except Exception:
-            pass
-            os.execl(sys.executable, sys.executable, *sys.argv)
-            quit()
+             pass
+             os.execl(sys.executable, sys.executable, *sys.argv)
+             quit()
 
 else:
    pass
