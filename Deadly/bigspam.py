@@ -62,7 +62,7 @@ if UstaD:
             await e.reply(usage, parse_mode=None, link_preview=None)
 
 
-if UstaD1:
+if UstaD:
    pass
 
 if UstaD2:
