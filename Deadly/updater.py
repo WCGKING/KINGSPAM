@@ -32,7 +32,7 @@ HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
 RESTARTING_APP = "re-starting heroku application"
 # -- Constants End -- #
 
-if Ustad:
+if UstaD:
  @UstaD.on(events.NewMessage(pattern="/update"))
  async def restart(e):
     if e.sender_id in SMEX_USERS:
