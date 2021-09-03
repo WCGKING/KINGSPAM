@@ -227,9 +227,6 @@ async def deploy_start(UstaD, message, refspec, remote):
     await UstaD.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
 
-if UstaD:
-   pass
-
 if UstaD2:
    pass
 
