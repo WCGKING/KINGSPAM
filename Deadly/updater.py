@@ -16,7 +16,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "in this case, Updater is unable to identify the branch to be updated."
     "please check out to an official branch, and re-start the updater."
 )
-OFFICIAL_UPSTREAM_REPO = "https://github.com/DEADLY-FIGHTERS/DEADLY-SPAM-BOT-2.0"
+OFFICIAL_UPSTREAM_REPO = "hhttps://github.com/DEADLY-FIGHTERS/DEADLY-SPAM-BOT-2.0"
 BOT_IS_UP_TO_DATE = "**The 𝐒𝐏𝐀𝐌𝐁𝐎𝐓** is up-to-date sur."
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
@@ -32,156 +32,87 @@ HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
 RESTARTING_APP = "re-starting heroku application"
 # -- Constants End -- #
 
-if UstaD:
-    @UstaD.on(events.NewMessage(pattern="/restart"))
-    async def restart(e):
-        if e.sender_id in SMEX_USERS:
-             text = " 🤖𝐑𝐄𝐒𝐓𝐀𝐑𝐓𝐄𝐃🤖\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
-             await e.reply(text, parse_mode=None, link_preview=None)
-             
-
-else:
-   pass
- 
-if UstaD2:
-    @UstaD2.on(events.NewMessage(pattern="/restart"))
-    async def restart(e):
-        if e.sender_id in SMEX_USERS:
-             text = " 🤖𝐑𝐄𝐒𝐓𝐀𝐑𝐓𝐄𝐃🤖\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
-             await e.reply(text, parse_mode=None, link_preview=None)
-             try:
-                await UstaD2.disconnect()
-             except Exception:
-                pass
-             os.execl(sys.executable, sys.executable, *sys.argv)
-             quit()
-
-else:
-   pass
- 
-if UstaD3:
-    @UstaD3.on(events.NewMessage(pattern="/restart"))
-    async def restart(e):
-        if e.sender_id in SMEX_USERS:
-             text = " 🤖𝐑𝐄𝐒𝐓𝐀𝐑𝐓𝐄𝐃🤖\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
-             await e.reply(text, parse_mode=None, link_preview=None)
-             try:
-                await UstaD3.disconnect()
-             except Exception:
-                pass
-             os.execl(sys.executable, sys.executable, *sys.argv)
-             quit()
-
-else:
-   pass
- 
-if UstaD4:
-    @UstaD4.on(events.NewMessage(pattern="/restart"))
-    async def restart(e):
-        if e.sender_id in SMEX_USERS:
-             text = " 🤖𝐑𝐄𝐒𝐓𝐀𝐑𝐓𝐄𝐃🤖\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
-             await e.reply(text, parse_mode=None, link_preview=None)
-             try:
-                await UstaD4.disconnect()
-             except Exception:
-                pass
-             os.execl(sys.executable, sys.executable, *sys.argv)
-             quit()
-
-else:
-   pass
- 
-if UstaD5:
-    @UstaD5.on(events.NewMessage(pattern="/restart"))
-    async def restart(e):
-        if e.sender_id in SMEX_USERS:
-             text = " 🤖𝐑𝐄𝐒𝐓𝐀𝐑𝐓𝐄𝐃🤖\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
-             await e.reply(text, parse_mode=None, link_preview=None)
-             try:
-                await UstaD5.disconnect()
-             except Exception:
-                pass
-             os.execl(sys.executable, sys.executable, *sys.argv)
-             quit()
-
-else:
-   pass
- 
-if UstaD6:
-    @UstaD6.on(events.NewMessage(pattern="/restart"))
-    async def restart(e):
-        if e.sender_id in SMEX_USERS:
-             text = " 🤖𝐑𝐄𝐒𝐓𝐀𝐑𝐓𝐄𝐃🤖\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
-             await e.reply(text, parse_mode=None, link_preview=None)
-             try:
-                await UstaD6.disconnect()
-             except Exception:
-                pass
-             os.execl(sys.executable, sys.executable, *sys.argv)
-             quit()
-
-else:
-   pass
-
- 
-if UstaD7:
-    @UstaD7.on(events.NewMessage(pattern="/restart"))
-    async def restart(e):
-        if e.sender_id in SMEX_USERS:
-             text = " 🤖𝐑𝐄𝐒𝐓𝐀𝐑𝐓𝐄𝐃🤖\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
-             await e.reply(text, parse_mode=None, link_preview=None)
-             try:
-                await UstaD7.disconnect()
-             except Exception:
-                pass
-             os.execl(sys.executable, sys.executable, *sys.argv)
-             quit()
-
-else:
-   pass
- 
-if UstaD8:
-    @UstaD8.on(events.NewMessage(pattern="/restart"))
-    async def restart(e):
-        if e.sender_id in SMEX_USERS:
-             text = " 🤖𝐑𝐄𝐒𝐓𝐀𝐑𝐓𝐄𝐃🤖\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
-             await e.reply(text, parse_mode=None, link_preview=None)
-             try:
-                await UstaD8.disconnect()
-             except Exception:
-                pass
-             os.execl(sys.executable, sys.executable, *sys.argv)
-             quit()
-
-else:
-   pass
- 
-if UstaD9:
-    @UstaD9.on(events.NewMessage(pattern="/restart"))
-    async def restart(e):
-        if e.sender_id in SMEX_USERS:
-             text = " 🤖𝐑𝐄𝐒𝐓𝐀𝐑𝐓𝐄𝐃🤖\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
-             await e.reply(text, parse_mode=None, link_preview=None)
-             try:
-                await UstaD9.disconnect()
-             except Exception:
-                pass
-             os.execl(sys.executable, sys.executable, *sys.argv)
-             quit()
-
-else:
-   pass
- 
-if UstaD10:
-    @UstaD10.on(events.NewMessage(pattern="/restart"))
-    async def restart(e):
+if UstaD: 
+ @UstaD.on(events.NewMessage(pattern="/update"))
+ async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
-else:
-   pass
+if UstaD2: 
+ @UstaD2.on(events.NewMessage(pattern="/update"))
+ async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
+        await e.reply(text, parse_mode=None, link_preview=None)
+
+
+if UstaD3: 
+ @UstaD3.on(events.NewMessage(pattern="/update"))
+ async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
+        await e.reply(text, parse_mode=None, link_preview=None)
+
+
+if UstaD4: 
+ @UstaD4.on(events.NewMessage(pattern="/update"))
+ async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
+        await e.reply(text, parse_mode=None, link_preview=None)
+
+
+if UstaD5: 
+ @UstaD5.on(events.NewMessage(pattern="/update"))
+ async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
+        await e.reply(text, parse_mode=None, link_preview=None)
+
+
+if UstaD6: 
+ @UstaD6.on(events.NewMessage(pattern="/update"))
+ async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
+        await e.reply(text, parse_mode=None, link_preview=None)
+
+
+if UstaD7: 
+ @UstaD7.on(events.NewMessage(pattern="/update"))
+ async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
+        await e.reply(text, parse_mode=None, link_preview=None)
+
+
+if UstaD8: 
+ @UstaD8.on(events.NewMessage(pattern="/update"))
+ async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
+        await e.reply(text, parse_mode=None, link_preview=None)
+
+
+if UstaD9: 
+ @UstaD9.on(events.NewMessage(pattern="/update"))
+ async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
+        await e.reply(text, parse_mode=None, link_preview=None)
+
+
+if UstaD10: 
+ @UstaD10.on(events.NewMessage(pattern="/update"))
+ async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
+        await e.reply(text, parse_mode=None, link_preview=None)
+
+
+
 
 @UstaD.on(
     events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
