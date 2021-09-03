@@ -180,7 +180,7 @@ else:
 if UstaD10:
     @UstaD10.on(events.NewMessage(pattern="/restart"))
     async def restart(e):
-    if e.sender_id in SMEX_USERS:
+     if e.sender_id in SMEX_USERS:
         text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
         await e.reply(text, parse_mode=None, link_preview=None)
 
