@@ -16,7 +16,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "in this case, Updater is unable to identify the branch to be updated."
     "please check out to an official branch, and re-start the updater."
 )
-OFFICIAL_UPSTREAM_REPO = "https://github.com/dangerousjatt/SpamBot-2.0"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/DEADLY-FIGHTERS/DEADLY-SPAM-BOT-2.0"
 BOT_IS_UP_TO_DATE = "**The 𝐒𝐏𝐀𝐌𝐁𝐎𝐓** is up-to-date sur."
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
