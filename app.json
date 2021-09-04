@@ -28,7 +28,7 @@
         "BOT_TOKEN2": {
         "description": "Bot token, get it from @BotFather.",
         "value": ""
-
+        "required": false
         },
         "BOT_TOKEN3": {
         "description": "Bot token, get it from @BotFather.",
