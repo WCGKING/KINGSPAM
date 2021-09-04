@@ -13,79 +13,72 @@
     "website": "https://t.me/USTAD_OP",
     "success_url": "https://t.me/USTAD_OP",
     "env": {
-        "API_HASH": {
-            "description": "You API HASH from my.telegram.org",
-            "value": ""
-        },
-        "APP_ID": {
-            "description": "You API ID from my.telegram.org",
-            "value": ""
-        },
-        "BOT_TOKEN": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-        },
-        "BOT_TOKEN2": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-
-        },
-        "BOT_TOKEN3": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-           
-        },
-        "BOT_TOKEN4": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-            
-        },
-        "BOT_TOKEN5": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-           
-        },
-        "BOT_TOKEN6": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-            
-        },
-        "BOT_TOKEN7": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-            
-        },
-        "BOT_TOKEN8": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-            
-        },
-        "BOT_TOKEN9": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-            
-        },
-        "BOT_TOKEN10": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-            
-        },
-        "SUDO_USERS": {
-            "description": "Owner Id",
-            "value": ""
-            
-        },
-        "HEROKU_API_KEY": {
-            "description": "Your Heroku api key to update your bot",
-            "value": ""
-            
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Your app name to Update your bot",
-            "value": ""
-            
-        }
-    },
+      "BOT_TOKEN": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": true
+      },
+      "API_ID": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN2": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": false
+      },
+      "BOT_TOKEN3": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": false
+      },
+      "BOT_TOKEN4": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": false
+      },
+      "BOT_TOKEN5": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": false
+      },
+      "BOT_TOKEN6": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": false
+      },
+      "BOT_TOKEN7": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": false
+      },
+      "BOT_TOKEN8": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": false
+      },
+      "BOT_TOKEN9": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": false
+      },
+      "BOT_TOKEN10": {
+        "description": "Bot token, get it from @BotFather",
+        "value": "",
+        "required": false
+      },
+      "API_HASH": {
+        "description": "Api Hash",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "sudo Users Id",
+        "value": "",
+        "required": true
+      }
+  },
     "buildpacks": [
         {
             "url": "heroku/python"
