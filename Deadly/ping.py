@@ -37,6 +37,7 @@ def get_readable_time(seconds: int) -> str:
 if UstaD:
       @UstaD.on(events.NewMessage(pattern="/ping"))
       async def ping(e) :
+        if e.sender_id in SMEX_USERS:
                   start = datetime.now()
                   text = "Pong!"
                   event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -61,6 +62,7 @@ else:
 if UstaD3:
       @UstaD3.on(events.NewMessage(pattern="/ping"))
       async def ping(e) :
+        if e.sender_id in SMEX_USERS:
                   start = datetime.now()
                   text = "Pong!"
                   event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -73,6 +75,7 @@ else:
 if UstaD4:
       @UstaD4.on(events.NewMessage(pattern="/ping"))
       async def ping(e) :
+       if e.sender_id in SMEX_USERS:
                   start = datetime.now()
                   text = "Pong!"
                   event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -85,6 +88,7 @@ else:
 if UstaD5:
       @UstaD5.on(events.NewMessage(pattern="/ping"))
       async def ping(e) :
+        if e.sender_id in SMEX_USERS:
                   start = datetime.now()
                   text = "Pong!"
                   event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -97,6 +101,7 @@ else:
 if UstaD6:
       @UstaD6.on(events.NewMessage(pattern="/ping"))
       async def ping(e) :
+       if e.sender_id in SMEX_USERS:
                   start = datetime.now()
                   text = "Pong!"
                   event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -109,6 +114,7 @@ else:
 if UstaD7:
       @UstaD6.on(events.NewMessage(pattern="/ping"))
       async def ping(e) :
+        if e.sender_id in SMEX_USERS:
                   start = datetime.now()
                   text = "Pong!"
                   event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -121,6 +127,7 @@ else:
 if UstaD8:
       @UstaD8.on(events.NewMessage(pattern="/ping"))
       async def ping(e) :
+        if e.sender_id in SMEX_USERS:
                   start = datetime.now()
                   text = "Pong!"
                   event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -133,6 +140,7 @@ else:
 if UstaD9:
       @UstaD9.on(events.NewMessage(pattern="/ping"))
       async def ping(e) :
+        if e.sender_id in SMEX_USERS:
                   start = datetime.now()
                   text = "Pong!"
                   event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -145,6 +153,7 @@ else:
 if UstaD10:
       @UstaD10.on(events.NewMessage(pattern="/ping"))
       async def ping(e) :
+        if e.sender_id in SMEX_USERS:
                   start = datetime.now()
                   text = "Pong!"
                   event = await e.reply(text, parse_mode=None, link_preview=None )
