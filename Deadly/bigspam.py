@@ -30,6 +30,7 @@ for x in SUDO_USERS:
 if UstaD:
  @UstaD.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
+  if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -65,6 +66,7 @@ if UstaD:
 if UstaD2:
  @UstaD2.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
+  if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -100,6 +102,7 @@ if UstaD2:
 if UstaD3:
  @UstaD3.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
+  if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -135,6 +138,7 @@ if UstaD3:
 if UstaD4:
  @UstaD4.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
+  if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -170,6 +174,7 @@ if UstaD4:
 if UstaD5:
  @UstaD5.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
+  if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -205,6 +210,7 @@ if UstaD5:
 if UstaD6:
  @UstaD6.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
+  if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -240,6 +246,7 @@ if UstaD6:
 if UstaD7:
  @UstaD7.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
+  if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -275,6 +282,7 @@ if UstaD7:
 if UstaD8:
  @UstaD8.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
+  if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -310,6 +318,7 @@ if UstaD8:
 if UstaD9:
  @UstaD9.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
+  if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -345,6 +354,7 @@ if UstaD9:
 if UstaD10:
  @UstaD10.on(events.NewMessage(pattern="/bigspam"))
  async def spam(e):
+  if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
