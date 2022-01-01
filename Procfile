@@ -1,1 +1,1 @@
-UstaD: python -m OpUstad
+UstaD: python -m Deadly
