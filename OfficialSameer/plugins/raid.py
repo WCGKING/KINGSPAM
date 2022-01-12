@@ -149,7 +149,7 @@ async def _(e):
             umser = await e.client.get_entity(a.sender_id)
             user_idd = umser.id
             user_id = int(user_idd)
-            if int(user_id) in :
+            if int(user_id) in DEADLYSPAM:
                 text = f" can't raid on @deadly_spam_bot's Owner."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) == OWNER_ID:
