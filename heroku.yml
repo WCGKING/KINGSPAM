@@ -1,0 +1,5 @@
+build:
+  docker:
+    OfficialSameer: Dockerfile
+run:
+  OfficialSameer: python3 -m OfficialSameer
