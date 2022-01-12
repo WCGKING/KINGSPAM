@@ -3,7 +3,7 @@ import asyncio
 import sys
 import git
 import heroku3
-from OfficialSameer import SAM, SAM2, SAM3, SAM4, SAM5 , SAM6, SAM7, SAM8, SAM9, SAM10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, DEADLYversion
+from OfficialSameer import SAM, SAM2, SAM3, SAM4, SAM5 , SAM6, SAM7, SAM8, SAM9, SAM10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, deadlyversion
 from OfficialSameer import CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
 from OfficialSameer import ALIVE_PIC
