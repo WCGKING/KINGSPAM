@@ -58,7 +58,7 @@ async def spam(e):
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
             g = b.id
-            if int(g) in :
+            if int(g) in Deadly:
                 text = f"I can't raid on @deadly_spam_bot's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) == OWNER_ID:
