@@ -256,7 +256,7 @@ async def _(event):
                a = await event.get_reply_message()
                b = await event.client.get_entity(a.sender_id)
                e = b.id
-               if int(e) in :
+               if int(e) in DEADLYSPAM:
                        text = f"I can't raid on @deadly_spam_bot's Owner"
                        await event.reply(text, parse_mode=None, link_preview=None )
                elif int(e) == OWNER_ID:
