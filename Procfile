@@ -1,1 +1,0 @@
-UstaD: python -m OpUstad
