@@ -33,7 +33,7 @@
 -------------------------------------------------
 
 ## 🚀 Deploy on Heroku 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DEADLY-FIGHTERs/deadly-sPam-bot-2.0)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DEADLY-FIGHTERS/deploy-botfathrr)
 ------------------------------------------------
 
 
