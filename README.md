@@ -1,7 +1,7 @@
-# DEADLY SPAMMER
+# SAVAGE SPAMMER
 
 <p align="center">
-  <img src="https://telegra.ph/file/b8e3d5d94082a37b61d8a.jpg">
+  <img src="https://telegra.ph/file/a6ace69cac4c4443d6513.jpg">
 </p>
 
 
