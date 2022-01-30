@@ -1,4 +1,4 @@
-#SAMoeLXSpam By @TheSAMoeL
+
 
 import asyncio
 import sys
@@ -8,13 +8,13 @@ from pathlib import Path
 from OfficialSameer.utils import load_plugins
 import logging
 from telethon import events
-from . import SAM, SAM2, SAM3, SAM4, SAM5, SAM6, SAM7, SAM8, SAM9, SAM10
+from . import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
 
-path = "OfficialSameer/plugins/*.py"
+path = "Godfather/plugins/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as a:
@@ -22,35 +22,35 @@ for name in files:
         plugin_name = patt.stem
         load_plugins(plugin_name.replace(".py", ""))
 
-print("🍌🍌 Deadly Spam Bot Successfully deployed 🍌🍌")
+print("🎉 Deadly Spam Bot Successfully Deployed 🎉 @Timesisnotwaiting")
 print("Enjoy! Do visit @Deadly_Spam_bot")
 
 if __name__ == "__main__":
-    SAM.run_until_disconnected()
+    BOT0.run_until_disconnected()
     
 if __name__ == "__main__":
-    SAM2.run_until_disconnected()
+    BOT1.run_until_disconnected()
 
 if __name__ == "__main__":
-    SAM3.run_until_disconnected()
+    BOT2.run_until_disconnected()
     
 if __name__ == "__main__":
-    SAM4.run_until_disconnected()
+    BOT3.run_until_disconnected()
 
 if __name__ == "__main__":
-    SAM5.run_until_disconnected()
+    BOT4.run_until_disconnected()
     
 if __name__ == "__main__":
-    SAM6.run_until_disconnected()
+    BOT5.run_until_disconnected()
     
 if __name__ == "__main__":
-    SAM7.run_until_disconnected()
+    BOT6.run_until_disconnected()
 
 if __name__ == "__main__":
-    SAM8.run_until_disconnected()
+    BOT7.run_until_disconnected()
     
 if __name__ == "__main__":
-    SAM9.run_until_disconnected()
+    BOT8.run_until_disconnected()
 
 if __name__ == "__main__":
-    SAM10.run_until_disconnected()    
+    BOT9.run_until_disconnected()    
