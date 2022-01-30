@@ -1,4 +1,4 @@
-# SAVAGE SPAMMER
+# DEADLY SPAMBOT
 
 <p align="center">
   <img src="https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg">
