@@ -1,4 +1,4 @@
-from Godfather import ZAID, SUDO_USERS
+from Godfather import BOT0,SUDO_USERS
 from telethon import events, Button
 from telethon.tl.custom import button
 from time import time
