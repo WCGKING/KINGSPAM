@@ -27,17 +27,16 @@ DeadlyX_Button = [
 #USERS 
 
 
-@SAM.on(events.NewMessage(pattern="/start"))
-@SAM2.on(events.NewMessage(pattern="/start"))
-@SAM3.on(events.NewMessage(pattern="/start"))
-@SAM4.on(events.NewMessage(pattern="/start"))
-@SAM5.on(events.NewMessage(pattern="/start"))
-@SAM6.on(events.NewMessage(pattern="/start"))
-@SAM7.on(events.NewMessage(pattern="/start"))
-@SAM7.on(events.NewMessage(pattern="/start"))
-@SAM8.on(events.NewMessage(pattern="/start"))
-@SAM9.on(events.NewMessage(pattern="/start"))
-@SAM10.on(events.NewMessage(pattern="/start"))
+@BOT0.on(events.NewMessage(pattern="/start"))
+@BOT1.on(events.NewMessage(pattern="/start"))
+@BOT2.on(events.NewMessage(pattern="/start"))
+@BOT3.on(events.NewMessage(pattern="/start"))
+@BOT4.on(events.NewMessage(pattern="/start"))
+@BOT5.on(events.NewMessage(pattern="/start"))
+@BOT6.on(events.NewMessage(pattern="/start"))
+@BOT7.on(events.NewMessage(pattern="/start"))
+@BOT8.on(events.NewMessage(pattern="/start"))
+@BOT9.on(events.NewMessage(pattern="/start"))
 async def start(event):              
     if event.is_private:
        DeadlyBot = await event.client.get_me()
