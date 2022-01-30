@@ -28,22 +28,11 @@
 
 -------------------------------------------------
 
-## 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 -[𝚂𝙰𝙼𝙴𝙴𝚁](https://t.me/OFFICIAL_SAMEER)
-
--------------------------------------------------
 ### Heroku Deploy
   - [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://github.com/Godfatherakkii/DEADLY-SPAMBOT/tree/Zaid)
-------------------------------------------------
-
-
-
-𝚃𝙰𝙺𝙴 𝚂𝚃𝚁𝙸𝙽𝙶 𝙵𝚁𝙾𝙼 𝙷𝙴𝚁𝙴 - 
-
-[![REPL](https://repl.it/badge/github/spandey112/SensibleUserbot)](https://replit.com/@sameerpanthi/DEADLY-FIGHTERS-BOT#main.py)
-    
 -------------------------------------------------
 
 ## credits 
 
-[OP RIZOEL BOT](https://github.com/MrRizoel/RiZoeLXSpam)
-AND [THE RIZOEL](t.me/TheRiZoeL)
+
+[THE RIZOEL](t.me/TheRiZoeL)
