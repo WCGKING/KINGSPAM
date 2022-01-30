@@ -2,4 +2,4 @@ build:
   docker:
     OfficialSameer: Dockerfile
 run:
-  OfficialSameer: python3 -m OfficialSameer
+  OfficialSameer: python3 -m Godfather
