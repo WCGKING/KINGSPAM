@@ -31,8 +31,8 @@
 ## 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 -[𝚂𝙰𝙼𝙴𝙴𝚁](https://t.me/OFFICIAL_SAMEER)
 
 -------------------------------------------------
-## 🚀 Deploy on Heroku 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DEADLY-FIGHTERS/deploy-botfathrrrr)
+### Heroku Deploy
+  - [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://github.com/Godfatherakkii/DEADLY-SPAMBOT)
 ------------------------------------------------
 
 
