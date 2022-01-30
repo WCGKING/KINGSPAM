@@ -3,31 +3,33 @@ import asyncio
 import sys
 import git
 import heroku3
-from OfficialSameer import SAM, SAM2, SAM3, SAM4, SAM5 , SAM6, SAM7, SAM8, SAM9, SAM10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, deadlyversion
-from OfficialSameer import CMD_HNDLR as hl
+# Changed root to Godfather
+from Godfather import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
+from Godfather import CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
-from OfficialSameer import ALIVE_PIC
+# alive Pic By Default It's Will Show Our
+from Godfather import ALIVE_PIC
 from telethon import events, version, Button
 from telethon.tl.custom import button
 from time import time
 from datetime import datetime
 
-SAM_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
+ZAID_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
   
 
 DEADLY = "✯ 𝗗𝗲𝗮𝗱𝗹𝘆 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✯\n\n"
 DEADLY += f"═══════════════════\n"
-DEADLY += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
+DEADLY += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.10.1`\n"
 DEADLY += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
 DEADLY += f"• **ᴅᴇᴀᴅʟʏʙᴏᴛ ᴠᴇʀsɪᴏɴ**  : `{deadlyversion}`\n"
 DEADLY += f"═══════════════════\n\n"   
 
                                   
-@SAM.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
 async def alive(event):
   if event.sender_id in SUDO_USERS:
      await SAM.send_file(event.chat_id,
-                                  SAM_PIC,
+                                  ZAID_PIC,
                                   caption=deadly,
                                   buttons=[
         [
@@ -35,7 +37,7 @@ async def alive(event):
         Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/DEADLY_SPAM_BOT")
         ],
         [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/DEADLY-FIGHTETS/DEADLY-BOTFATHER-BOT")
+        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Godfatherakkii/SAVAGE-BOTFATHER-SPAM")
         ]
         ]
         )
@@ -67,16 +69,16 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@SAM.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@SAM2.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@SAM3.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@SAM4.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@SAM5.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@SAM6.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@SAM7.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@SAM8.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@SAM9.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@SAM10.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@BOT1.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@BOT2.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@BOT3.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@BOT4.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@BOT5.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@BOT6.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@BOT7.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@BOT8.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@BOT9.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
@@ -84,62 +86,62 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"😁 🇵 🇴 🇳 🇬 !\n\n♡︎ `{ms}` 𝗺𝘀 ♡︎")
+        await event.edit(f"🎉 🇵 🇴 🇳 🇬 !\n\n♡︎ `{ms}` 𝗺𝘀 ♡︎")
         
         
 
-@SAM.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@SAM2.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@SAM3.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@SAM4.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@SAM5.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@SAM6.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@SAM7.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@SAM8.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@SAM9.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@SAM10.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@BOT1.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@BOT2.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@BOT3.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@BOT4.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@BOT5.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@BOT6.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@BOT7.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@BOT8.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@BOT9.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "**Restarting Your Deadly Spam Bot**.. Please Wait Until It Starts Again"
+        text = "**Rebooting ↪️**.. Please Wait Until It Starts Again"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
-            await SAM.disconnect()
+            await BOT0.disconnect()
         except Exception:
             pass
         try:
-            await SAM2.disconnect()
+            await BOT1.disconnect()
         except Exception:
             pass
         try:
-            await SAM3.disconnect()
+            await BOT2.disconnect()
         except Exception:
             pass
         try:
-            await SAM4.disconnect()
+            await BOT3.disconnect()
         except Exception:
             pass
         try:
-            await SAM5.disconnect()
+            await BOT4.disconnect()
         except Exception:
             pass
         try:
-            await SAM6.disconnect()
+            await BOT5.disconnect()
         except Exception:
             pass
         try:
-            await SAM7.disconnect()
+            await BOT6.disconnect()
         except Exception:
             pass
         try:
-            await SAM8.disconnect()
+            await BOT7.disconnect()
         except Exception:
             pass
         try:
-            await SAM9.disconnect()
+            await BOT8.disconnect()
         except Exception:
             pass
         try:
-            await SAM10.disconnect()
+            await BOT9.disconnect()
         except Exception:
             pass
 
@@ -151,7 +153,8 @@ Heroku = heroku3.from_key(HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
 sudousers = os.environ.get("SUDO_USER", None)
 
-@SAM.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
+# this Feature Will Works only If u r Added Heroku api
+@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
     if event.sender_id == OWNER_ID:
         ok = await event.reply("Adding user as a sudo...")
