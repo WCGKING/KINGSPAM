@@ -1,6 +1,6 @@
 import asyncio
-from OfficialSameer import SAM, SAM2, SAM3, SAM4, SAM5, SAM6, SAM7, SAM8, SAM9, SAM10, SUDO_USERS
-from OfficialSameer import CMD_HNDLR as hl
+from Godfather import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
+from Godfather import CMD_HNDLR as hl
 import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
