@@ -1,7 +1,7 @@
 # SAVAGE SPAMMER
 
 <p align="center">
-  <img src="https://telegra.ph/file/a6ace69cac4c4443d6513.jpg">
+  <img src="https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg">
 </p>
 
 
@@ -14,17 +14,12 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 [![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/sameerpanthi/deadly-spam-bot/blob/main/LICENSE)
 
-----
 
-## 𝚂𝚃𝙰𝚃𝚄𝚂 𝙾𝙵 𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 
-<p align="left"><a href="https://github.com/sameerpanthi/deadly-spam-bot/network/members"><img src="https://img.shields.io/github/forks/sameerpanthi/deadly-spam-bot?label=Forks&logoColor=Black&style=social"></a><p align="left"><a href="https://github.com/sameerpanthi/deadly-spam-bot/stargazers"><img src="https://img.shields.io/github/stars/sameerpanthi/deadly-spam-bot?logoColor=Blue&style=social"></a><p align="left"><a href="https://github.com/sameerpanthi/deadly-spam-bot"></a><p align="left"><a href="https://github.com/sameerpanthi/deadly-spam-bot?"><img src="https://img.shields.io/github/last-commit/sameerpanthi/deadly-spam-bot?style=plastic"></
-
--------------------------------------------------
 
 ## 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 
                           
-<a href="https://t.me/savage_spam_bots"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-red.svg?logo=Telegram"></a>
-<a href="https://t.me/savage_bot_updates"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-red.svg?logo=Telegram"></a>
+<a href="https://t.me/Deadly_spam_bot"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-red.svg?logo=Telegram"></a>
+<a href="https://t.me/Deadly_spambot"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-red.svg?logo=Telegram"></a>
 
 -------------------------------------------------
 
