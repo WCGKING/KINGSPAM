@@ -1,4 +1,4 @@
-© #Rizol
+
 
 import os
 import sys
