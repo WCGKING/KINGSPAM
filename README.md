@@ -23,9 +23,11 @@
 
 -------------------------------------------------
 
-### Heroku Deploy
-  - [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://github.com/Godfatherakkii/DEADLY-SPAMBOT)
+#### With Heroku
 
+<a href="https://www.heroku.com/deploy?template=https://github.com/Godfatherakkii/DEADLY-SPAMBOT/tree/Umm">
+  <img src="https://www.herokucdn.com/deploy/button.svg">
+</a>
 -------------------------------------------------
 
 ## credits 
