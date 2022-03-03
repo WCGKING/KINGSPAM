@@ -25,7 +25,7 @@
 
 #### With Heroku
 
-<a href="https://www.heroku.com/deploy?template=https://github.com/ITZ-ZAID/Deploy">
+<a href="https://www.heroku.com/deploy?template=https://github.com/ITZ-ZAID/DEADLY-SPAMBOT/tree/Umk">
   <img src="https://www.herokucdn.com/deploy/button.svg">
 </a>
 
