@@ -25,7 +25,7 @@
 
 #### With Heroku
 
-<a href="https://www.heroku.com/deploy?template=https://github.com/ITZ-ZAID/Deploy">
+<a href="https://www.heroku.com/deploy?template=https://www.heroku.com/deploy?template=https://github.com/ITZ-ZAID/Deploy">
   <img src="https://www.herokucdn.com/deploy/button.svg">
 </a>
 
