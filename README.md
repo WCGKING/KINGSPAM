@@ -32,5 +32,4 @@
 
 ## credits 
 
-
-[THE RIZOEL](t.me/TheRiZoeL)
+No One
