@@ -3,7 +3,7 @@ import sys
 from sys import argv
 import glob
 from pathlib import Path
-from Godfather.utils import load_plugins
+from DEADLYSPAM.utils import load_plugins
 import logging
 from telethon import events
 from . import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
