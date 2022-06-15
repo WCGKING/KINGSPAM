@@ -28,7 +28,7 @@ async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
+            return await e.reply(usage)
         Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         bitxh = await e.get_reply_message()
         if len(Deadly) == 2:
@@ -37,13 +37,13 @@ async def spam(e):
             g = a.id
             if int(g) in Deadly:
                 text = f"I can't raid on @deadly_spam_bot's Owner"
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
             elif int(g) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
             elif int(g) in SUDO_USERS:
                 text = f"This guy is a sudo user."
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text) 
             else:
                 c = a.first_name
                 username = f"[{c}](tg://user?id={g})"
@@ -60,13 +60,13 @@ async def spam(e):
             g = b.id
             if int(g) in DEADLYSPAM:
                 text = f"I can't raid on @deadly_spam_bot's Owner"
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
             elif int(g) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
             elif int(g) in SUDO_USERS:
                 text = f"This guy is a sudo user."
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
             else:
                 c = b.first_name
                 counter = int(Deadly[0])
@@ -130,20 +130,20 @@ async def _(e):
             user_id = int(user_idd)
             if int(user_id) in Deadly:
                 text = f" can't raid on @deadly_spam_bot's Owner."
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
             elif int(user_id) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."            
-                await event.reply(text, parse_mode=None, link_preview=None )
+                await event.reply(text)
             elif int(user_id) in SUDO_USERS:
                 text = f"This guy is a sudo user."
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
             else:
                 que[user_id] = []
                 gey = que.get(user_id)
                 phucker = [user_id]
                 gey.append(phucker)
                 text = f"Activated replyraid"
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
             umser = await e.client.get_entity(a.sender_id)
@@ -151,20 +151,20 @@ async def _(e):
             user_id = int(user_idd)
             if int(user_id) in DEADLYSPAM:
                 text = f" can't raid on @deadly_spam_bot's Owner."
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
             elif int(user_id) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
-                await event.reply(text, parse_mode=None, link_preview=None )
+                await event.reply(text)
             elif int(user_id) in SUDO_USERS:
                 text = f"This guy is a sudo user."
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
             else:
                 que[user_id] = []
                 gey = que.get(user_id)
                 phucker = [user_id]
                 gey.append(phucker)
                 text = f"Activated Replyraid"
-                await e.reply(text, parse_mode=None, link_preview=None )
+                await e.reply(text)
         else:
             await e.reply(usage)
 
@@ -184,7 +184,7 @@ async def _(e):
     global que    
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
+            return await e.reply(usage)
         Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(e.text) > 12:
@@ -197,7 +197,7 @@ async def _(e):
             except Exception as f:
                 pass
             text = "De-Activated Reply Raid"
-            await e.reply(text, parse_mode=None, link_preview=None )
+            await e.reply(text)
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
@@ -208,9 +208,9 @@ async def _(e):
             except Exception as f:
                 pass
             text = "De-Activated Reply Raid"
-            await e.reply(text, parse_mode=None, link_preview=None )
+            await e.reply(text)
         else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+            await e.reply(usage)
     
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sdelayraid(?: |$)(.*)" % hl))
 @BOT1.on(events.NewMessage(incoming=True, pattern=r"\%sdelayraid(?: |$)(.*)" % hl))
@@ -234,13 +234,13 @@ async def _(event):
              e = a.id
              if int(e) in DEADLYSPAM:
                     text = f"I can't raid on @deadly_spam_bot's Owner"
-                    await event.reply(text, parse_mode=None, link_preview=None )
+                    await event.reply(text)
              elif int(e) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
-                await event.reply(text, parse_mode=None, link_preview=None )
+                await event.reply(text)
              elif int(e) in SUDO_USERS:
                     text = f"This guy is a sudo user."
-                    await event.reply(text, parse_mode=None, link_preview=None )
+                    await event.reply(text)
              else:
                  c = a.first_name
                  username = f"[{c}](tg://user?id={e})"
@@ -258,13 +258,13 @@ async def _(event):
                e = b.id
                if int(e) in DEADLYSPAM:
                        text = f"I can't raid on @deadly_spam_bot's Owner"
-                       await event.reply(text, parse_mode=None, link_preview=None )
+                       await event.reply(text)
                elif int(e) == OWNER_ID:
                        text = f"This guy is a owner Of this Bots."
-                       await event.reply(text, parse_mode=None, link_preview=None )
+                       await event.reply(text)
                elif int(e) in SUDO_USERS:
                        text = f"This guy is a sudo user."
-                       await event.reply(text, parse_mode=None, link_preview=None )
+                       await event.reply(text)
                else:
                    c = b.first_name
                    username = f"[{c}](tg://user?id={e})"
