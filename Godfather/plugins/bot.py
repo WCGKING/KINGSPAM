@@ -15,7 +15,7 @@ from telethon.tl.custom import button
 from time import time
 from datetime import datetime
 
-ZAID_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
+DEAD_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
   
 
 DEADLY = "✯ 𝗗𝗲𝗮𝗱𝗹𝘆 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✯\n\n"
@@ -30,15 +30,15 @@ DEADLY += f"═══════════════════\n\n"
 async def alive(event):
   if event.sender_id in SUDO_USERS:
      await BOT0.send_file(event.chat_id,
-                                  ZAID_PIC,
+                                  DEAD_PIC,
                                   caption=deadly,
                                   buttons=[
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/DEADLY_SPAMMER"),
+        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Deadly_spambot"),
         Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/DEADLY_SPAM_BOT")
         ],
         [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Godfatherakkii/SAVAGE-BOTFATHER-SPAM")
+        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Team-Deadly/DEADLY-SPAMBOT")
         ]
         ]
         )
