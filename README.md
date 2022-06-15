@@ -25,9 +25,9 @@
 
 #### With Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-
+<a href="https://www.heroku.com/deploy?template=https://github.com/Team-Deadly/BOTDEPLOY">
+  <img src="https://www.herokucdn.com/deploy/button.svg">
+</a>
 -------------------------------------------------
 
 ## credits 
