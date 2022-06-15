@@ -1,1 +1,1 @@
-Godfather: python3 -m DEADLYSPAM
+worker: python3 -m DEADLYSPAM
