@@ -27,7 +27,7 @@ async def _(e):
             bc = deadly[0]
             Xd = int(bc)
             text = "Leaving....."
-            event = await e.reply(text, parse_mode=None, link_preview=None )
+            event = await e.reply(text)
             try:
                 await event.client(LeaveChannelRequest(Xd))
                 await event.edit("Succesfully Left ✅")
