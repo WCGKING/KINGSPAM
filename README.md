@@ -26,7 +26,7 @@ Mᴀɴᴀɢᴇᴅ Bʏ: [卄ﾑᥴᛕꫀ᥅ 〤 丂нﾑKﾑ](https://t.me/ShaKaO
 
 ## Is Safe To Deploy
 
-<b>This SpamBot Is Fully Created On Pyrogram And Working With Telethon So Bot Is Fully Safe To Deploy, We Gives Deployment To Heroku And Also In Vps For Better Spam Experience</b>
+<b>This SpamBot Is Fully Created On Telethon And Working With Telethon So Bot Is Fully Safe To Deploy, We Gives Deployment To Heroku And Also In Vps For Better Spam Experience</b>
 
 # CᴏɴᴛʀɪBᴜᴛᴏʀꜱ
 
