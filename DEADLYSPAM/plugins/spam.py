@@ -180,16 +180,16 @@ async def unlimitedspam(event):
       await event.reply("Oops!! Something went wrong, Report In @DEADLY_SPAM_BOT\n\n" + str(e))
 
 
-@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%szaidspam(?: |$)(.*)" % hl))
-@BOT1.on(events.NewMessage(incoming=True, pattern=r"\%szaidspam(?: |$)(.*)" % hl))
-@BOT2.on(events.NewMessage(incoming=True, pattern=r"\%szaidspam(?: |$)(.*)" % hl))
-@BOT3.on(events.NewMessage(incoming=True, pattern=r"\%szaidspam(?: |$)(.*)" % hl))
-@BOT4.on(events.NewMessage(incoming=True, pattern=r"\%szaidspam(?: |$)(.*)" % hl))
-@BOT5.on(events.NewMessage(incoming=True, pattern=r"\%szaidspam(?: |$)(.*)" % hl))
-@BOT6.on(events.NewMessage(incoming=True, pattern=r"\%szaidspam(?: |$)(.*)" % hl))
-@BOT7.on(events.NewMessage(incoming=True, pattern=r"\%szaidspam(?: |$)(.*)" % hl))
-@BOT8.on(events.NewMessage(incoming=True, pattern=r"\%szaidspam(?: |$)(.*)" % hl))
-@BOT9.on(events.NewMessage(incoming=True, pattern=r"\%szaidspam(?: |$)(.*)" % hl))
+@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
+@BOT1.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
+@BOT2.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
+@BOT3.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
+@BOT4.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
+@BOT5.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
+@BOT6.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
+@BOT7.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
+@BOT8.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
+@BOT9.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
 async def pspam(e):
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -208,5 +208,5 @@ async def pspam(e):
                          await gifspam(e, smex) 
                      await asyncio.sleep(0.4)
         else:
-            usage = f"**MODULE NAME : PORN SPAM** \n\n command: `.zaidspam <count>`"
+            usage = f"**MODULE NAME : PORN SPAM** \n\n command: `.deadlyspam <count>`"
             await e.reply(usage)
