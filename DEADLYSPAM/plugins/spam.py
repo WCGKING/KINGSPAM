@@ -158,38 +158,17 @@ async def spam(e):
             await e.reply(usage)
 
 
-@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hl))
-@BOT1.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hl))
-@BOT2.on(events.NewMessage(incoming=True, pattern=r"\%supam(?: |$)(.*)" % hl))
-@BOT3.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hl))
-@BOT4.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hl))
-@BOT5.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hl))
-@BOT6.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hl))
-@BOT7.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hl))
-@BOT8.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hl))
-@BOT9.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hl))
-async def unlimitedspam(event):
-  if e.sender_id in SUDO_USERS:
-    try:
-      op = event.text[7:]
-      x = None
-      while x == None:
-        await event.client.send_message(event.chat, op)
-        await asyncio.sleep(0.3)
-    except Exception as e:
-      await event.reply("Oops!! Something went wrong, Report In @DEADLY_SPAM_BOT\n\n" + str(e))
 
-
-@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
-@BOT1.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
-@BOT2.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
-@BOT3.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
-@BOT4.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
-@BOT5.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
-@BOT6.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
-@BOT7.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
-@BOT8.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
-@BOT9.on(events.NewMessage(incoming=True, pattern=r"\%sdeadlyspam(?: |$)(.*)" % hl))
+@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
+@BOT1.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
+@BOT2.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
+@BOT3.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
+@BOT4.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
+@BOT5.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
+@BOT6.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
+@BOT7.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
+@BOT8.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
+@BOT9.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
 async def pspam(e):
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -208,5 +187,5 @@ async def pspam(e):
                          await gifspam(e, smex) 
                      await asyncio.sleep(0.4)
         else:
-            usage = f"**MODULE NAME : PORN SPAM** \n\n command: `.deadlyspam <count>`"
+            usage = f"**MODULE NAME : PORN SPAM** \n\n command: `.pornspam <count>`"
             await e.reply(usage)
