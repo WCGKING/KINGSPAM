@@ -21,7 +21,7 @@ Mᴀɴᴀɢᴇᴅ Bʏ: [卄ﾑᥴᛕꫀ᥅ 〤 丂нﾑKﾑ](https://t.me/ShaKaO
 #### [THIS ALSO FOR HEROKU](https://heroku.com/deploy?template=https://github.com/Team-Deadly/BOTDEPLOY) 
 
 # Tutorial 
-- Full Tutorial - [![Full Tutorial](https://img.shields.io/badge/Watch%20Now-blue)](https://www.youtube.com/watch?v=mJjcO7Zy-6g)
+Deploy Fuull Tutorial - [![Full Tutorial](https://img.shields.io/badge/Watch%20Now-blue)](https://www.youtube.com/watch?v=mJjcO7Zy-6g)
 
 ## What Is DeadlySpamBot
 
