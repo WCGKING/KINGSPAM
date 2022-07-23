@@ -6,7 +6,7 @@ import random
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from resources.data import RAID, REPLYRAID, DEADLYSPAM
+from resources.data import RAID, REPLYRAID, DEADLYSPAM, BRTHSPAM
 from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDO_USERS, OWNER_ID
 from DEADLYSPAM import CMD_HNDLR as hl
 
@@ -278,3 +278,70 @@ async def _(event):
                              await asyncio.sleep(sleeptimem)
          else:
             await event.reply(usage)
+
+
+@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@BOT1.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@BOT2.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@BOT3.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@BOT4.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@BOT5.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@BOT6.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@BOT7.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@BOT8.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@BOT9.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+async def spam(e):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗜𝗥𝗧𝗛𝗗𝗔𝗬 𝗦𝗣𝗔𝗠\n\nCommand:\n\n.bspam <count> <Username of User>\n\n.bspam <count> <reply to a User>\n\nCount must be a integer."
+    if e.sender_id in SUDO_USERS:
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+            return await e.reply(usage)
+        Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        bitxh = await e.get_reply_message()
+        if len(Deadly) == 2:
+            user = str(Deadly[1])
+            a = await e.client.get_entity(user)
+            g = a.id
+            if int(g) in Deadly:
+                text = f"I can't raid on @deadly_spam_bot's Owner"
+                await e.reply(text)
+            elif int(g) == OWNER_ID:
+                text = f"This guy is a owner Of this Bots."
+                await e.reply(text)
+            elif int(g) in SUDO_USERS:
+                text = f"This guy is a sudo user."
+                await e.reply(text) 
+            else:
+                c = a.first_name
+                username = f"[{c}](tg://user?id={g})"
+                counter = int(Deadly[0])
+                for _ in range(counter):
+                    reply = random.choice(BRTHSPAM)
+                    caption = f"{username} {reply}"
+                    async with e.client.action(e.chat_id, "typing"):
+                        await e.client.send_message(e.chat_id, caption)
+                        await asyncio.sleep(0.5)
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            if int(g) in DEADLYSPAM:
+                text = f"I can't raid on @deadly_spam_bot's Owner"
+                await e.reply(text)
+            elif int(g) == OWNER_ID:
+                text = f"This guy is a owner Of this Bots."
+                await e.reply(text)
+            elif int(g) in SUDO_USERS:
+                text = f"This guy is a sudo user."
+                await e.reply(text)
+            else:
+                c = b.first_name
+                counter = int(Deadly[0])
+                username = f"[{c}](tg://user?id={g})"
+                for _ in range(counter):
+                    reply = random.choice(BRTHSPAM)
+                    caption = f"{username} {reply}"
+                    async with e.client.action(e.chat_id, "typing"):
+                        await e.client.send_message(e.chat_id, caption)
+                        await asyncio.sleep(0.3)
+        else:
+            await e.reply(usage)
