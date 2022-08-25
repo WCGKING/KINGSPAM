@@ -25,7 +25,7 @@ DEAD_Help += f" `.raid` - to raid\n `.replyraid` - to active reply raid\n `.drep
 
 DEAD_Help += f" .deadlyspam - ɪ ᴡɪʟʟ ꜱᴜɢɢᴇꜱᴛ ᴅᴏɴ'ᴛ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ😂 ↧\n\n"
 
-DEAD_Help += f"© @DEADLY_SPAM_BOT\n"
+DEAD_Help += f"© @TheDeadlyBots\n"
 
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
