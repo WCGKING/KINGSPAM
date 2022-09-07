@@ -39,19 +39,14 @@ async def start(e):
         mention = f"[{name}](tg://user?id={user_id})"
         myOwner = f"[{OWNER_NAME}](tg://user?id={OWNER_ID})"
         creator = f"[Blaze](tg://user?id={5256676062})"
-        sudo_user = ""
-        if e.sender_id in OWNER_ID:
-            sudo_user = "True"
-        else:
-            sudo_user = "False"
         DEADLY_ON = f"""
-Hey {mention},
-This Is Deadly Spam Bot!
+ʜᴇʏ {mention},
+ᴛʜɪs ɪs ᴅᴇᴀᴅʟʏ sᴘᴀᴍʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- {creator}!
 
-Owner:- {myOwner}
-OWNER:- {sudo_user}
-Creator:- {creator}
+ᴛʜɪs ʙᴏᴛ ᴏᴡɴᴇʀ:- {myOwner}
 
-Click Below Button For Detailed informations!
+ᴄᴏᴅᴇ ᴄʀᴇᴀᴛᴏʀ:- {creator}
+
+ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴀᴄᴄᴇss sᴜᴘᴘᴏʀᴛ ,ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ʀᴇᴘᴏ!
     """
         await e.client.send_file(e.chat_id, DEADLY_IMG, caption=DEADLY_ON, buttons=Deadly_Button)
