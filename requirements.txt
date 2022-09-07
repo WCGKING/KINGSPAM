@@ -1,5 +1,5 @@
 python-decouple
-telethon
+Telethon==1.24.0
 cryptg
 heroku3
 sqlalchemy==1.3.20
