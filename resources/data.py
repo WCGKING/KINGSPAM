@@ -1,8 +1,8 @@
 RAID = [
-    "MADARCHOD TERI MAA KI CHUT ME GHUTKA KHAAKE THOOK DUNGA 🤣🤣",
-    "TERE BEHEN K CHUT ME CHAKU DAAL KAR CHUT KA KHOON KAR DUGA",
-    "TERI VAHEEN NHI HAI KYA? 9 MAHINE RUK SAGI VAHEEN DETA HU 🤣🤣🤩",
-    "TERI MAA K BHOSDE ME AEROPLANEPARK KARKE UDAAN BHAR DUGA ✈️🛫",
+    "𝗠𝗔𝗗𝗛𝗔𝗥𝗖𝗛𝗢𝗗 𝗧𝗘𝗥𝗜 𝗠𝗔𝗔 𝗞𝗜 𝗖𝗛𝗨𝗧 𝗠𝗘 𝗚𝗨𝗧𝗛𝗞𝗔 𝗞𝗛𝗔𝗞𝗘 𝗧𝗛𝗢𝗢𝗞 𝗗𝗨𝗡𝗚𝗔🤣🤣",
+    "𝗧𝗘𝗥𝗜 𝗕𝗛𝗘𝗡 𝗞𝗜 𝗖𝗛𝗨𝗧 𝗠𝗘 𝗖𝗛𝗔𝗣𝗣𝗔𝗟 𝗠𝗔𝗥𝗞𝗘 𝗖𝗛𝗨𝗧 𝗦𝗘 𝗙𝗨𝗔𝗥𝗘 𝗡𝗜𝗞𝗔𝗟 𝗗𝗨𝗡𝗚𝗔 😘",
+    "𝟵 𝗠𝗛𝗜𝗡𝗘 𝗠𝗘 𝗛𝗢𝗧𝗔 𝗛 𝗕𝗘𝗧𝗔 𝗢𝗥 𝗧𝗘𝗥𝗜 𝗠𝗔𝗔 𝗕𝗢𝗟𝗧𝗜 𝗛 𝗠𝗔𝗥𝗟𝗘 𝗠𝗘𝗥𝗜 𝗖𝗛𝗨𝗧 𝗔𝗔 𝗟𝗘𝗧𝗔 🤣🤣🤩",
+    "𝗧𝗘𝗥𝗜 𝗠𝗔𝗔 𝗞𝗘 𝗕𝗛𝗢𝗦𝗗𝗘 𝗠𝗘 𝗔𝗜𝗥𝗢𝗣𝗟𝗔𝗡𝗘 𝗚𝗛𝗨𝗦𝗔 𝗗𝗨𝗡𝗚𝗔🤣✈️🛫",
     "TERI MAA KI CHUT ME SUTLI BOMB FOD DUNGA TERI MAA KI JHAATE JAL KE KHAAK HO JAYEGI💣",
     "TERI MAAKI CHUT ME SCOOTER DAAL DUGA👅",
     "TERE BEHEN K CHUT ME CHAKU DAAL KAR CHUT KA KHOON KAR DUGA",
