@@ -2,8 +2,6 @@
 # 「[DeadlySpam👮](https://t.me/deadly_spam_bot)」
 Mᴀɴᴀɢᴇᴅ Bʏ: [⛓️𝘽𝙡𝙖𝙯𝙚✘ᥫʀ᭡](https://t.me/Elric_xD)
 
-[![Deploy](https://cdn.scalingo.com/deploy/button.svg)](https://my.scalingo.com/deploy)
-
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
  
@@ -16,6 +14,8 @@ Mᴀɴᴀɢᴇᴅ Bʏ: [⛓️𝘽𝙡𝙖𝙯𝙚✘ᥫʀ᭡](https://t.me/Elri
 # Hᴏsᴛɪɴɢ
   <img src="https://readme-typing-svg.herokuapp.com?color=F77247&width=420&lines=𝙷𝚘𝚠+𝚃𝚘+𝙳𝚎𝚙𝚕𝚘𝚢+DeadlySpamBot+𝚂𝚘𝚞𝚛𝚌𝚎;𝙷𝚘𝚠+𝚃𝚘+𝙳𝚎𝚙𝚕𝚘𝚢+DeadlySpamBot+𝚂𝚘𝚞𝚛𝚌𝚎%E2%9D%A4%EF%B8%8F">
 </p>
+
+[![Deploy](https://cdn.scalingo.com/deploy/button.svg)](https://my.scalingo.com/deploy)
 
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Team-Deadly/BOTDEPLOY"><img align="center" alt="Heroku" width="92px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
 
