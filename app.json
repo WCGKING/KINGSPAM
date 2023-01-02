@@ -83,6 +83,11 @@
         "value": "",
         "required": true
       },
+       "DATABASE_URL": {
+            "description": "postgres database url",
+            "value": "",
+            "required": true
+        },
        "SUDO_USER": {
             "description": "Sudo users id space by space",
             "value": "",
