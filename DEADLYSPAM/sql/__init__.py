@@ -15,9 +15,8 @@ def start() -> scoped_session:
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
 
-
+BASE = declarative_base()
 try:
-    BASE = declarative_base()
     SESSION = start()
 except AttributeError as e:
     # this is a dirty way for the work-around required for #23
