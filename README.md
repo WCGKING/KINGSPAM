@@ -16,10 +16,10 @@ Mᴀɴᴀɢᴇᴅ Bʏ: [⛓️𝘽𝙡𝙖𝙯𝙚✘ᥫʀ᭡](https://t.me/Elri
 </p>
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Team-Deadly/BOTDEPLOY"><img align="center" alt="Heroku" width="92px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Team-Deadly/DEADLY-SPAMBOT"><img align="center" alt="Heroku" width="92px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
 
 
-#### [THIS ALSO FOR HEROKU](https://heroku.com/deploy?template=https://github.com/Team-Deadly/BOTDEPLOY) 
+#### [THIS ALSO FOR HEROKU](https://heroku.com/deploy?template=https://github.com/Team-Deadly/DEADLY-SPAMBOT) 
 
 # Tutorial 
 
