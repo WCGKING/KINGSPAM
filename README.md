@@ -22,7 +22,8 @@ Mᴀɴᴀɢᴇᴅ Bʏ: [⛓️𝘽𝙡𝙖𝙯𝙚✘ᥫʀ᭡](https://t.me/Elri
 
 ###    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴀɪʟᴡᴀʏ 」─
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/v6ZxgZ?referralCode=TLYFVL)
+<p align="center"><a href="https://railway.app/new/template/v6ZxgZ?referralCode=TLYFVL"> <img src="https://railway.app/button.svg" width="220" height="38.45"/></a></p>
+
 
 
 
