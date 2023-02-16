@@ -22,7 +22,7 @@ Mᴀɴᴀɢᴇᴅ Bʏ: [⛓️𝘽𝙡𝙖𝙯𝙚✘ᥫʀ᭡](https://t.me/Elri
 
 ###    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴀɪʟᴡᴀʏ 」─
 
-<p align="center"><a href="https://railway.app/new/template/2tiuho?referralCode=TLYFVL"> <img src="https://railway.app/button.svg" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://railway.app/new/template/v6ZxgZ?referralCode=TLYFVL"> <img src="https://railway.app/button.svg" width="220" height="38.45"/></a></p>
 
 
 
