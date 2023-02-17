@@ -28,7 +28,7 @@ DEAD_Help += f" !pornspam - ɪ ᴡɪʟʟ ꜱᴜɢɢᴇꜱᴛ ᴅᴏɴ'ᴛ ᴜꜱ
 DEAD_Help += f"© @TheDeadlyBots\n"
 
 
-@BOT0.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@BOT0.on(events.NewMessage(incoming=True, pattern='/help'))
 async def help(event):               
     if event.sender_id in SUDO_USERS:
       await BOT0.send_file(event.chat_id,
