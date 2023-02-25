@@ -25,16 +25,17 @@ async def _(event):
         deadly = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(event.text) > 7:
             bc = deadly[0]
-            Xd = int(bc)
-            text = "Leaving....."
-            event = await event.reply(text)
+            Xd = int(bc)           
+            blaze = await event.reply("**ʟᴇᴀᴠᴇ ᴄᴏᴍᴍᴀɴᴅ ʀᴇᴄᴇɪᴠᴇᴅ 🥺**")
             try:
                 await event.client(LeaveChannelRequest(Xd))
-                await event.edit("sᴜᴄᴇssғᴜʟʟʏ ʟᴇғᴛ ᴛʜᴇ ᴄʜᴀᴛ ✅")
+                await blaze.edit("**» ꜱᴘᴀᴍᴍᴇʀꜱ ʟᴇғᴛ ᴛʜᴇ ᴄʜᴀᴛ**")
             except Exception as e:
                 await event.edit(str(e))   
         else:
             if event.is_private:
                  await event.reply(f**"» ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ɢʀᴏᴜᴘ!**") 
         else:
-            await event.reply(usage, parse_mode=None, link_preview=None )   
+            await event.reply(usage, parse_mode=None, link_preview=None)   
+    else:
+        await event.reply("**ᴅᴇᴘʟᴏʏ ʏᴏᴜʀ ᴏᴡɴ ᴅᴇᴀᴅʟʏ-ꜱᴘᴀᴍʙᴏᴛ!**") 
