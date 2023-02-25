@@ -1,6 +1,9 @@
 import config
-from DEADLYSPAM import BOT0
-from telethon import events
+from DEADLYSPAM import BOT0, deadlyversion
+from telethon import events, version, Button
+from telethon.tl.custom import button
+
+
 DEADLY_PIC = ALIVE_PIC if config.ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
 
 
