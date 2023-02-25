@@ -19,19 +19,22 @@ import sys
 @BOT7.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 @BOT8.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
-async def _(e):
+async def _(event):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
-    if e.sender_id in SUDOERS:
-        deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        if len(e.text) > 7:
+    if event.sender_id in SUDOERS:
+        deadly = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
+        if len(event.text) > 7:
             bc = deadly[0]
             Xd = int(bc)
             text = "Leaving....."
-            event = await e.reply(text)
+            event = await event.reply(text)
             try:
                 await event.client(LeaveChannelRequest(Xd))
                 await event.edit("sᴜᴄᴇssғᴜʟʟʏ ʟᴇғᴛ ᴛʜᴇ ᴄʜᴀᴛ ✅")
             except Exception as e:
                 await event.edit(str(e))   
         else:
-            await e.reply(usage, parse_mode=None, link_preview=None )   
+            if event.is_private:
+                 await event.reply(f**"» ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ɢʀᴏᴜᴘ!**") 
+        else:
+            await event.reply(usage, parse_mode=None, link_preview=None )   
