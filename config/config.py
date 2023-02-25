@@ -29,9 +29,6 @@ BOT_TOKEN9 = getenv("BOT_TOKEN9", None)
 BOT_TOKEN10 = getenv("BOT_TOKEN10", None) 
 
 
-# Now TURN OF DATABASE ( mongodb database now) 
-DB_URI = getenv("DB_URI", None) 
-
 # EXTRA VARS
 ALIVE_PIC = getenv("ALIVE_PIC") 
 CMD_HNDLR = getenv("CMD_HNDLR") 
