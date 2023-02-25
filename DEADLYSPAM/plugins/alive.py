@@ -1,5 +1,5 @@
 import config
-from DEADLYSPAM import BOT0, deadlyversion
+from DEADLYSPAM import BOT0, deadlyversion, SUDOERS
 from telethon import events, version, Button
 from telethon.tl.custom import button
 
