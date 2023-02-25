@@ -1,12 +1,14 @@
-
-import asyncio
 import os
+import asyncio
+import config
 from telethon import events, Button
 from telethon.tl.custom import button
-from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, ALIVE_PIC, OWNER_ID, OWNER_NAME
+from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
 
-DEADLY_IMG = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
 
+DEADLY_IMG = ALIVE_PIC if config.ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
+OWNER_NAME = OWNER_NAME if config.OWNER_NAME else "DEADLY-USER"
+OWNER_ID = config.OWNER_ID
 
 Deadly_Button = [
         [
