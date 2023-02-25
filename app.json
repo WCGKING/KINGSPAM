@@ -87,7 +87,7 @@
             "description": "owner Id",
             "value": "",
             "required": true
-        },
+        }
     },
   "stack": "heroku-20",
   "buildpacks": [
