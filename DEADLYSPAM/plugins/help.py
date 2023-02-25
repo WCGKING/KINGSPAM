@@ -1,10 +1,12 @@
-from DEADLYSPAM import BOT0,SUDO_USERS
+import config
+from DEADLYSPAM import BOT0,SUDOERS
 from telethon import events, Button
 from telethon.tl.custom import button
 from time import time
 from datetime import datetime
-from DEADLYSPAM import CMD_HNDLR as hl
-    
+ 
+hl = config.CMD_HNDLR
+ 
 HELP_PIC = "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
 
 DEAD_Help = "🔥 Dᴇᴀᴅʟʏ Sᴘᴀᴍ Bᴏᴛ 🔥\n\n"
@@ -30,7 +32,7 @@ DEAD_Help += f"© @TheDeadlyBots\n"
 
 @BOT0.on(events.NewMessage(incoming=True, pattern='/help'))
 async def help(event):               
-    if event.sender_id in SUDO_USERS:
+    if event.sender_id in SUDOERS:
       await BOT0.send_file(event.chat_id,
                                   HELP_PIC,
                                   caption=DEAD_Help,
