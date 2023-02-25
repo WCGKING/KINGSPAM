@@ -14,8 +14,9 @@ from telethon import events
 @BOT8.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(event):
+    await event.delete() 
     if event.sender_id in SUDOERS:
-        await event.reply(f"**[ᴅᴇᴀᴅʟʏ-ꜱᴘᴀᴍʙᴏᴛ 🔥](https://t.me/deadly_spam_bot) : ʀᴇꜱᴛᴀʀᴛɪɴɢ!")
+        await event.reply(f"**[ᴅᴇᴀᴅʟʏ-ꜱᴘᴀᴍʙᴏᴛ 🔥](https://t.me/deadly_spam_bot) : ʀᴇꜱᴛᴀʀᴛɪɴɢ!", parse_mode=None, link_preview=None)
         try:
             await BOT0.disconnect()
         except Exception:
