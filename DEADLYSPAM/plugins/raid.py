@@ -3,12 +3,15 @@ import asyncio
 import base64
 import os
 import random        
+import config
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from resources.data import RAID, REPLYRAID, DEADLYSPAM, BRTHSPAM
-from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDO_USERS, OWNER_ID
-from DEADLYSPAM import CMD_HNDLR as hl
+from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDOERS
+
+
+hl = config.CMD_HNDLR 
 
 
 que = {}
@@ -26,7 +29,7 @@ que = {}
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%sraid(?: |$)(.*)" % hl))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
-    if e.sender_id in SUDO_USERS:
+    if e.sender_id in SUDOERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage)
         Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -38,10 +41,10 @@ async def spam(e):
             if int(g) in Deadly:
                 text = f"I can't raid on @deadly_spam_bot's Owner"
                 await e.reply(text)
-            elif int(g) == OWNER_ID:
+            elif int(g) == config.OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
                 await e.reply(text)
-            elif int(g) in SUDO_USERS:
+            elif int(g) in SUDOERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text) 
             else:
@@ -61,10 +64,10 @@ async def spam(e):
             if int(g) in DEADLYSPAM:
                 text = f"I can't raid on @deadly_spam_bot's Owner"
                 await e.reply(text)
-            elif int(g) == OWNER_ID:
+            elif int(g) == config.OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
                 await e.reply(text)
-            elif int(g) in SUDO_USERS:
+            elif int(g) in SUDOERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text)
             else:
@@ -120,7 +123,7 @@ async def _(event):
 async def _(e):
     global que
     usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>."
-    if e.sender_id in SUDO_USERS:
+    if e.sender_id in SUDOERS:
         Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         SAMx = await e.get_reply_message()
         if len(e.text) > 11:
@@ -131,10 +134,10 @@ async def _(e):
             if int(user_id) in Deadly:
                 text = f" can't raid on @deadly_spam_bot's Owner."
                 await e.reply(text)
-            elif int(user_id) == OWNER_ID:
+            elif int(user_id) == config.OWNER_ID:
                 text = f"This guy is a owner Of this Bots."            
                 await event.reply(text)
-            elif int(user_id) in SUDO_USERS:
+            elif int(user_id) in SUDOERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text)
             else:
@@ -152,10 +155,10 @@ async def _(e):
             if int(user_id) in DEADLYSPAM:
                 text = f" can't raid on @deadly_spam_bot's Owner."
                 await e.reply(text)
-            elif int(user_id) == OWNER_ID:
+            elif int(user_id) == config.OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
                 await event.reply(text)
-            elif int(user_id) in SUDO_USERS:
+            elif int(user_id) in SUDOERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text)
             else:
@@ -182,7 +185,7 @@ async def _(e):
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
     global que    
-    if e.sender_id in SUDO_USERS:
+    if e.sender_id in SUDOERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage)
         Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -224,7 +227,7 @@ async def _(e):
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%sdelayraid(?: |$)(.*)" % hl))
 async def _(event):
    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗘𝗟𝗔𝗬𝗥𝗔𝗜𝗗\n\nCommand:\n\n.delayraid <delay> <count> <Username of User>\n\n.delayraid <delay> <count> <reply to a User>\n\nCount and Sleeptime must be a integer."        
-   if event.sender_id in SUDO_USERS:
+   if event.sender_id in SUDOERS:
          if event.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
          Deadly = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
@@ -235,10 +238,10 @@ async def _(event):
              if int(e) in DEADLYSPAM:
                     text = f"I can't raid on @deadly_spam_bot's Owner"
                     await event.reply(text)
-             elif int(e) == OWNER_ID:
+             elif int(e) == config.OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
                 await event.reply(text)
-             elif int(e) in SUDO_USERS:
+             elif int(e) in SUDOERS:
                     text = f"This guy is a sudo user."
                     await event.reply(text)
              else:
@@ -259,10 +262,10 @@ async def _(event):
                if int(e) in DEADLYSPAM:
                        text = f"I can't raid on @deadly_spam_bot's Owner"
                        await event.reply(text)
-               elif int(e) == OWNER_ID:
+               elif int(e) == config.OWNER_ID:
                        text = f"This guy is a owner Of this Bots."
                        await event.reply(text)
-               elif int(e) in SUDO_USERS:
+               elif int(e) in SUDOERS:
                        text = f"This guy is a sudo user."
                        await event.reply(text)
                else:
@@ -292,7 +295,7 @@ async def _(event):
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗜𝗥𝗧𝗛𝗗𝗔𝗬 𝗦𝗣𝗔𝗠\n\nCommand:\n\n.bspam <count> <Username of User>\n\n.bspam <count> <reply to a User>\n\nCount must be a integer."
-    if e.sender_id in SUDO_USERS:
+    if e.sender_id in SUDOERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage)
         Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -304,10 +307,10 @@ async def spam(e):
             if int(g) in Deadly:
                 text = f"I can't raid on @deadly_spam_bot's Owner"
                 await e.reply(text)
-            elif int(g) == OWNER_ID:
+            elif int(g) == config.OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
                 await e.reply(text)
-            elif int(g) in SUDO_USERS:
+            elif int(g) in SUDOERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text) 
             else:
@@ -327,10 +330,10 @@ async def spam(e):
             if int(g) in DEADLYSPAM:
                 text = f"I can't raid on @deadly_spam_bot's Owner"
                 await e.reply(text)
-            elif int(g) == OWNER_ID:
+            elif int(g) == config.OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
                 await e.reply(text)
-            elif int(g) in SUDO_USERS:
+            elif int(g) in SUDOERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text)
             else:
