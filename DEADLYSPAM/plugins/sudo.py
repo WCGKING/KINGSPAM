@@ -24,47 +24,36 @@ OWNER_ID = config.OWNER_ID
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
     if event.sender_id in OWNER_ID:
-        ok = await event.reply("**ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ 🥀**")
-        try:
-            target = await get_user(event)
-        except Exception:
-            await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
-        if user.id in SUDOERS:
-            await ok.edit("ᴜꜱᴇʀ ᴀʟʀᴇᴀᴅʏ  ɪɴ   ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
-        else:
-            SUDOERS.append(target) 
-            await ok.edit(f"ᴀᴅᴅᴇᴅ {target} ᴛᴏ ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
+       if event.reply_to_msg_id is not None:
+           reply_msg = await event.get_reply_message()
+           user_id = reply_msg.sender_id
+           ok = await event.reply("**ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ 🥀**")
+           if user_id in SUDOERS:
+               await ok.edit("ᴜꜱᴇʀ ᴀʟʀᴇᴀᴅʏ  ɪɴ   ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
+           else:
+               SUDOERS.append(user_id) 
+               await ok.edit(f"ᴀᴅᴅᴇᴅ {user_id} ᴛᴏ ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
+       else:
+           await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
 
 
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sdelsudo(?: |$)(.*)" % hl))
 async def delb(event):
     if event.sender_id in OWNER_ID:
-        ok = await event.reply("**ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ 🥀**")
-        try:
-            target = await get_user(event)
-        except Exception:
-            await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
-        if user.id not in SUDOERS:
-            await ok.edit("ᴜꜱᴇʀ ᴀʟʀᴇᴀᴅʏ  ɪɴ   ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
-        else:
-            SUDOERS.remove(target) 
-            await ok.edit(f"ʀᴇᴍᴏᴠᴇᴅ {target} ғʀᴏᴍ ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
+         if event.reply_to_msg_id is not None:
+            reply_msg = await event.get_reply_message()
+            user_id = reply_msg.sender_id
+            ok = await event.reply("**ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ 🥀**")
+            if user_id not in SUDOERS:
+                await ok.edit("ᴜꜱᴇʀ ᴀʟʀᴇᴀᴅʏ  ɪɴ   ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
+            else:
+                SUDOERS.remove(user_id) 
+                await ok.edit(f"ʀᴇᴍᴏᴠᴇᴅ {user_id} ғʀᴏᴍ ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
+         else:
+             await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
 
 
         
                   
      
-async def get_user(event):
-    if event.reply_to_msg_id:
-        previous_message = await event.get_reply_message()
-        if previous_message.forward:
-            replied_user = await event.client(
-                GetFullUserRequest(previous_message.forward.sender_id)
-            )
-        else:
-            replied_user = await event.client(
-                GetFullUserRequest(previous_message.sender_id)
-            )
-    target = replied_user.user.id
-    return target
