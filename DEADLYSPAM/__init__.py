@@ -1,7 +1,6 @@
 import os
 import sys
 import random
-from config import OWNER_ID
 import asyncio
 import telethon.utils
 from telethon import TelegramClient, events
@@ -18,7 +17,7 @@ deadlyversion = "v3.0.0"
 #SUDOERS
 HEHE = "5937170640"
 SUDOERS = int(HEHE) 
-OWNER = OWNER_ID
+OWNER = config.OWNER_ID
 SUDOERS.append(int(OWNER))
 
 # ECHO LIST
