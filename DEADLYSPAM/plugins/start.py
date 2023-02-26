@@ -5,7 +5,7 @@ from telethon import events, Button
 from telethon.tl.custom import button
 from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
 
-ALIVE_IMG = config.IMG
+ALIVE_IMG = config.ALIVE_PIC
 
 if config.ALIVE_PIC:
     DEADLY_IMG = ALIVE_IMG
