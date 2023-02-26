@@ -10,9 +10,7 @@ API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH")
 
 # ADMIN DETAILS (Your ID) 
-OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
-)
+OWNER_ID = getenv("OWNER_ID") 
 OWNER_NAME = getenv("OWNER_NAME") 
 
 # BOT TOKEN CONFIG VARS (get all vars detail from @botfather) 
