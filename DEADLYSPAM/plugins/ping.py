@@ -1,10 +1,11 @@
 import os
 import sys
+import config
 from datetime import datetime
-from DEADLYSPAM import  BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, CMD_HNDLR as hl, SUDOERS
+from DEADLYSPAM import  BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDOERS
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events
-
+hl = config.CMD_HNDLR
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 @BOT1.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
