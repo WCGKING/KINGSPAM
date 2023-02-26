@@ -16,9 +16,7 @@ Mᴀɴᴀɢᴇᴅ Bʏ: [⛓️𝘽𝙡𝙖𝙯𝙚✘ᥫʀ᭡](https://t.me/Elri
   <img src="https://readme-typing-svg.herokuapp.com?color=F77247&width=420&lines=𝙷𝚘𝚠+𝚃𝚘+𝙳𝚎𝚙𝚕𝚘𝚢+DeadlySpamBot+𝚂𝚘𝚞𝚛𝚌𝚎;𝙷𝚘𝚠+𝚃𝚘+𝙳𝚎𝚙𝚕𝚘𝚢+DeadlySpamBot+𝚂𝚘𝚞𝚛𝚌𝚎%E2%9D%A4%EF%B8%8F">
 </p>
 
-<p align="center">
 ###    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
-</p>
 
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Team-Deadly/DEADLY-SPAMBOT"> <img src="https://img.shields.io/badge/Deadly%20On%20Heroku-Blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
