@@ -18,7 +18,6 @@ hl = config.CMD_HNDLR
 @BOT8.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 async def ping(event):
-    await event.delete() 
     if event.sender_id in SUDOERS:
         start = datetime.now()
         text = await event.reply(f"» ᴘᴏɴɢ!", parse_mode=None, link_preview=None)
