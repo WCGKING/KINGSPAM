@@ -5,6 +5,7 @@ import config
 import asyncio
 import telethon.utils
 from telethon import TelegramClient, events
+from config import OWNER_ID
 import logging
 import time
 
@@ -17,7 +18,7 @@ deadlyversion = "v3.0.0"
 
 #SUDOERS
 SUDOERS = config.SUDO_USER
-SUDOERS.append(f"config.OWNER_ID") 
+SUDOERS.append(OWNER_ID) 
 
 # ECHO LIST
 ECHOUSER = config.LUND
