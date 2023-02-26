@@ -24,31 +24,31 @@ hl = config.CMD_HNDLR
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
     if event.sender_id in CHUT:
-       ok = await event.reply("**ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ 🥀**")
        if event.reply_to_msg_id is not None:
            reply_msg = await event.get_reply_message()
            user_id = reply_msg.sender_id
+           ok = await event.reply("**ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ 🥀**")
            if user_id in SUDOERS:
                await ok.edit("ᴜꜱᴇʀ ᴀʟʀᴇᴀᴅʏ  ɪɴ   ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
            else:
                SUDOERS.append(user_id) 
                await ok.edit(f"ᴀᴅᴅᴇᴅ {user_id} ᴛᴏ ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
        else:
-           await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
+           await event.reply(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
 
 
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sdelsudo(?: |$)(.*)" % hl))
 async def delb(event):
     if event.sender_id in CHUT:
-         ok = await event.reply("**ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ 🥀**")
          if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
+            ok = await event.reply("**ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ 🥀**")
             if user_id not in SUDOERS:
                 await ok.edit("ᴜꜱᴇʀ ᴀʟʀᴇᴀᴅʏ  ɪɴ   ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
             else:
                 SUDOERS.remove(user_id) 
                 await ok.edit(f"ʀᴇᴍᴏᴠᴇᴅ {user_id} ғʀᴏᴍ ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
          else:
-             await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
+             await event.reply(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
