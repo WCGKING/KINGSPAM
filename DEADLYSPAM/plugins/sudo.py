@@ -14,7 +14,7 @@ import sys
 import git
 import config
 # Changed root to DEADLYSPAM
-from DEADLYSPAM import BOT0, SUDOERS
+from DEADLYSPAM import BOT0, SUDOERS, CHUT
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, version
 
@@ -23,7 +23,7 @@ OWNER_ID = config.OWNER_ID
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
-    if event.sender_id == OWNER_ID:
+    if event.sender_id in CHUT:
        if event.reply_to_msg_id is not None:
            reply_msg = await event.get_reply_message()
            user_id = reply_msg.sender_id
@@ -34,13 +34,13 @@ async def tb(event):
                SUDOERS.append(user_id) 
                await ok.edit(f"ᴀᴅᴅᴇᴅ {user_id} ᴛᴏ ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
        else:
-            await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
+           await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
 
 
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sdelsudo(?: |$)(.*)" % hl))
 async def delb(event):
-    if event.sender_id == OWNER_ID:
+    if event.sender_id in CHUT:
          if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
@@ -51,7 +51,7 @@ async def delb(event):
                 SUDOERS.remove(user_id) 
                 await ok.edit(f"ʀᴇᴍᴏᴠᴇᴅ {user_id} ғʀᴏᴍ ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
          else:
-              await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
+             await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
 
 
         
