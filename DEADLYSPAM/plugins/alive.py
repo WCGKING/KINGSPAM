@@ -3,8 +3,12 @@ from DEADLYSPAM import BOT0, deadlyversion, SUDOERS
 from telethon import events, version, Button
 from telethon.tl.custom import button
 
+PIC = config.ALIVE_PIC
 
-DEADLY_PIC = ALIVE_PIC if config.ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
+if config.ALIVE_PIC:
+    DEADLY_PIC = PIC
+else:
+    DEADLY_PIC = "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
 
 
 
