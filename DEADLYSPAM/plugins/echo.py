@@ -35,7 +35,7 @@ async def echo(eventevent):
             elif int(user_id) in SUDOERS:
                     text = f"ᴄᴀɴɴᴏᴛ ᴇᴄʜᴏ ᴏɴ ꜱᴜᴅᴏᴜꜱᴇʀ !"
                     await event.reply(text, parse_mode=None, link_preview=None )
-           elif int(user_id) in ECHOUSER:
+            elif int(user_id) in ECHOUSER:
                      await event.reply("**» ᴜꜱᴇʀ ᴀʟʀᴇᴀᴅʏ ɪɴ ᴇᴄʜᴏʟɪꜱᴛ !!**")
                      return
                  ECHOUSER.append(user_id) 
