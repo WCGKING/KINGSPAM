@@ -35,9 +35,8 @@ async def _(event):
                 await blaze.edit("**» ꜱᴘᴀᴍᴍᴇʀꜱ ʟᴇғᴛ ᴛʜᴇ ᴄʜᴀᴛ**")
             except Exception as e:
                 await event.edit(str(e))   
-        else:
-            if event.is_private:
-                 await event.reply(f**"» ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ɢʀᴏᴜᴘ!**") 
+        if event.is_private:
+            await event.reply(f**"» ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ɢʀᴏᴜᴘ!**") 
         else:
             await event.reply(usage, parse_mode=None, link_preview=None)   
     else:
