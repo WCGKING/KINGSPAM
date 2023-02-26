@@ -76,11 +76,11 @@
             "required": false,
             "value": "!"
         }
-    },
+    }
     "addons": [],
     "buildpacks": [
         {
             "url": "heroku/python"
         }
-    ],
+    ]
     "stack": "container" 
