@@ -38,14 +38,14 @@ async def spam(e):
             user = str(Deadly[1])
             a = await e.client.get_entity(user)
             g = a.id
-            if int(g) in Deadly:
-                text = f"I can't raid on @deadly_spam_bot's Owner"
+            if int(g) in DEADLYSPAM:
+                text = f"» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !"
                 await e.reply(text)
             elif int(g) == config.OWNER_ID:
-                text = f"This guy is a owner Of this Bots."
+                text = f"» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ  !"
                 await e.reply(text)
             elif int(g) in SUDOERS:
-                text = f"This guy is a sudo user."
+                text = f"» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ꜱᴜᴅᴏᴇʀ !"
                 await e.reply(text) 
             else:
                 c = a.first_name
@@ -62,13 +62,13 @@ async def spam(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             if int(g) in DEADLYSPAM:
-                text = f"I can't raid on @deadly_spam_bot's Owner"
+                text = f"» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !"
                 await e.reply(text)
             elif int(g) == config.OWNER_ID:
-                text = f"This guy is a owner Of this Bots."
+                text = f"» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ  !"
                 await e.reply(text)
             elif int(g) in SUDOERS:
-                text = f"This guy is a sudo user."
+                text = f"» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ꜱᴜᴅᴏᴇʀ !"
                 await e.reply(text)
             else:
                 c = b.first_name
@@ -131,21 +131,21 @@ async def _(e):
             a = await e.client.get_entity(message)
             user_idd = a.id
             user_id = int(user_idd)
-            if int(user_id) in Deadly:
-                text = f" can't raid on @deadly_spam_bot's Owner."
+            if int(user_id) in DEADLYSPAM:
+                text = f"**» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !**"
                 await e.reply(text)
             elif int(user_id) == config.OWNER_ID:
-                text = f"This guy is a owner Of this Bots."            
+                text = f"» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ  !"            
                 await event.reply(text)
             elif int(user_id) in SUDOERS:
-                text = f"This guy is a sudo user."
+                text = f"» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ꜱᴜᴅᴏᴇʀ !"
                 await e.reply(text)
             else:
                 que[user_id] = []
                 gey = que.get(user_id)
                 phucker = [user_id]
                 gey.append(phucker)
-                text = f"Activated replyraid"
+                text = f"**ʀᴇᴘʟʏʀᴀɪᴅ ᴀᴄᴛɪᴠᴀᴛᴇᴅ** !"
                 await e.reply(text)
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -153,20 +153,20 @@ async def _(e):
             user_idd = umser.id
             user_id = int(user_idd)
             if int(user_id) in DEADLYSPAM:
-                text = f" can't raid on @deadly_spam_bot's Owner."
+                text = f" » ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !"
                 await e.reply(text)
             elif int(user_id) == config.OWNER_ID:
-                text = f"This guy is a owner Of this Bots."
+                text = f"» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ !"
                 await event.reply(text)
             elif int(user_id) in SUDOERS:
-                text = f"This guy is a sudo user."
+                text = f"» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ꜱᴜᴅᴏᴇʀ !"
                 await e.reply(text)
             else:
                 que[user_id] = []
                 gey = que.get(user_id)
                 phucker = [user_id]
                 gey.append(phucker)
-                text = f"Activated Replyraid"
+                text = f"**ʀᴇᴘʟʏʀᴀɪᴅ ᴀᴄᴛɪᴠᴀᴛᴇᴅ** !"
                 await e.reply(text)
         else:
             await e.reply(usage)
@@ -199,7 +199,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "De-Activated Reply Raid"
+            text = "**ʀᴇᴘʟʏʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ** !"
             await e.reply(text)
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -210,7 +210,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "De-Activated Reply Raid"
+            text = "**ʀᴇᴘʟʏʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ** !"
             await e.reply(text)
         else:
             await e.reply(usage)
@@ -236,14 +236,14 @@ async def _(event):
              a = await event.client.get_entity(user)
              e = a.id
              if int(e) in DEADLYSPAM:
-                    text = f"I can't raid on @deadly_spam_bot's Owner"
-                    await event.reply(text)
+                 text = f"**» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !**"
+                 await event.reply(text)
              elif int(e) == config.OWNER_ID:
-                text = f"This guy is a owner Of this Bots."
-                await event.reply(text)
+                 text = f"**» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ  !**"
+                 await event.reply(text)
              elif int(e) in SUDOERS:
-                    text = f"This guy is a sudo user."
-                    await event.reply(text)
+                 text = f"ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ꜱᴜᴅᴏᴇʀ"
+                 await event.reply(text)
              else:
                  c = a.first_name
                  username = f"[{c}](tg://user?id={e})"
@@ -260,14 +260,14 @@ async def _(event):
                b = await event.client.get_entity(a.sender_id)
                e = b.id
                if int(e) in DEADLYSPAM:
-                       text = f"I can't raid on @deadly_spam_bot's Owner"
-                       await event.reply(text)
+                   text = f"**» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !**"
+                   await event.reply(text)
                elif int(e) == config.OWNER_ID:
-                       text = f"This guy is a owner Of this Bots."
-                       await event.reply(text)
+                   text = f"**» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ  !**"
+                   await event.reply(text)
                elif int(e) in SUDOERS:
-                       text = f"This guy is a sudo user."
-                       await event.reply(text)
+                   text = f"ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ꜱᴜᴅᴏᴇʀ"
+                   await event.reply(text)
                else:
                    c = b.first_name
                    username = f"[{c}](tg://user?id={e})"
@@ -304,15 +304,15 @@ async def spam(e):
             user = str(Deadly[1])
             a = await e.client.get_entity(user)
             g = a.id
-            if int(g) in Deadly:
-                text = f"I can't raid on @deadly_spam_bot's Owner"
+            if int(g) in DEADLYSPAM:
+                text = f"**» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !**"
                 await e.reply(text)
             elif int(g) == config.OWNER_ID:
-                text = f"This guy is a owner Of this Bots."
+                text = f"**» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ  !**"
                 await e.reply(text)
             elif int(g) in SUDOERS:
-                text = f"This guy is a sudo user."
-                await e.reply(text) 
+                text = f"ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ꜱᴜᴅᴏᴇʀ"
+                await e.reply(text)
             else:
                 c = a.first_name
                 username = f"[{c}](tg://user?id={g})"
@@ -328,13 +328,13 @@ async def spam(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             if int(g) in DEADLYSPAM:
-                text = f"I can't raid on @deadly_spam_bot's Owner"
+                text = f"**» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !**"
                 await e.reply(text)
             elif int(g) == config.OWNER_ID:
-                text = f"This guy is a owner Of this Bots."
+                text = f"**» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ  !**"
                 await e.reply(text)
             elif int(g) in SUDOERS:
-                text = f"This guy is a sudo user."
+                text = f"ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ꜱᴜᴅᴏᴇʀ"
                 await e.reply(text)
             else:
                 c = b.first_name
