@@ -22,8 +22,7 @@ DEADLY += f"═══════════════════\n\n"
 
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-async def alive(event):
-  await event.delete() 
+async def alive(event): 
   if event.sender_id in SUDOERS:
      Blaze = [[Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/DEADLY_SPAMBOT"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/DEADLY_SPAM_BOT")], [Button.url("• ʀᴇᴘᴏ •", "https://github.com/Team-Deadly/DEADLY-SPAMBOT")]]
      await BOT0.send_file(event.chat_id, DEADLY_PIC, caption=DEADLY, buttons=Blaze) 
