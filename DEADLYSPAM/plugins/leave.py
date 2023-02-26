@@ -1,6 +1,6 @@
 import asyncio
-from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDOERS, OWNER_ID
-from DEADLYSPAM import CMD_HNDLR as hl
+from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDOERS
+import config
 import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
@@ -8,6 +8,9 @@ from telethon import events
 import os
 import random
 import sys
+
+OWNER_ID = config.OWNER_ID
+hl = config.CMD_HNDLR
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 @BOT1.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
