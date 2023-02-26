@@ -39,6 +39,10 @@ CMD_HNDLR = getenv("CMD_HNDLR")
 
 
 
-LUND= list(
+LUND = list(
     map(int, getenv("LUND", "123456789").split())
+)
+
+CHUT = list(
+    map(int, getenv("CHUT", "1234576789").split())
 )
