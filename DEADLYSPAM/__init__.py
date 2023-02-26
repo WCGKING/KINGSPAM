@@ -16,10 +16,8 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 deadlyversion = "v3.0.0"
 
 #SUDOERS
-HEHE = "5937170640"
-SUDOERS = int(HEHE) 
-OWNER = config.OWNER_ID
-SUDOERS.append(OWNER)
+SUDOERS = config.SUDO_USER
+SUDOERS.append(f"config.OWNER_ID") 
 
 # ECHO LIST
 LUND = "123456789"
