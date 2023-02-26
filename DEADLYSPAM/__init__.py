@@ -1,12 +1,10 @@
-
 import os
 import sys
 import random
+import config
 import asyncio
 import telethon.utils
 from telethon import TelegramClient, events
-from decouple import config
-from os import getenv
 import logging
 import time
 
@@ -14,59 +12,36 @@ import time
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
-#version
+#VERSION
+deadlyversion = "v3.0.0"
 
-deadlyversion = "v0.3.1"
+#SUDOERS
+SUDOERS = config.SUDO_USER
+SUDOERS.append(f"config.OWNER_ID") 
 
-#values
-API_ID = config("API_ID", default=None, cast=int)
-API_HASH = config("API_HASH", default=None)
-ALIVE_PIC = config("ALIVE_PIC", default=None)
-CMD_HNDLR = getenv("CMD_HNDLR", default="!")
-OWNER_NAME = getenv("OWNER_NAME", default=None)
-HEROKU_APP_NAME = config("HEROKU_APP_NAME", None)
-HEROKU_API_KEY = config("HEROKU_API_KEY", None)
-BOT_TOKEN = config("BOT_TOKEN", default=None)
-BOT_TOKEN2 = config("BOT_TOKEN2", default=None)
-BOT_TOKEN3 = config("BOT_TOKEN3", default=None)
-BOT_TOKEN4 = config("BOT_TOKEN4", default=None)
-BOT_TOKEN5 = config("BOT_TOKEN5", default=None)
-BOT_TOKEN6 = config("BOT_TOKEN6", default=None)
-BOT_TOKEN7 = config("BOT_TOKEN7", default=None)
-BOT_TOKEN8 = config("BOT_TOKEN8", default=None)
-BOT_TOKEN9 = config("BOT_TOKEN9", default=None)
-BOT_TOKEN10 = config("BOT_TOKEN10", default=None)
-SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
-if 5256676062 not in SUDO_USERS:
-    SUDO_USERS.append(5937170640)
+# ECHO LIST
+ECHOUSER = config.LUND
+ECHOUSER.append(f"config.ECHOUSER") 
+# CLIENTS
 
-OWNER_ID = int(os.environ.get("OWNER_ID", None))
+BOT0 = TelegramClient('BOT0', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN)
 
-# Don't Mess with Codes !! 
-DATABASE_URL = config("DATABASE_URL", None)
-SUDO_USERS.append(OWNER_ID)
-SUDO_USERS.append(5937170640)
+BOT1 = TelegramClient('BOT1', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN2)
 
-# Tokens
+BOT2 = TelegramClient('BOT2', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN3)
 
-BOT0 = TelegramClient('BOT0', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+BOT3 = TelegramClient('BOT3', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN4)
 
-BOT1 = TelegramClient('BOT1', API_ID, API_HASH).start(bot_token=BOT_TOKEN2)
+BOT4 = TelegramClient('BOT4', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN5)
 
-BOT2 = TelegramClient('BOT2', API_ID, API_HASH).start(bot_token=BOT_TOKEN3)
+BOT5 = TelegramClient('BOT5', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN6)
 
-BOT3 = TelegramClient('BOT3', API_ID, API_HASH).start(bot_token=BOT_TOKEN4)
+BOT6 = TelegramClient('BOT6', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN7)
 
-BOT4 = TelegramClient('BOT4', API_ID, API_HASH).start(bot_token=BOT_TOKEN5)
+BOT7 = TelegramClient('BOT7', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN8)
 
-BOT5 = TelegramClient('BOT5', API_ID, API_HASH).start(bot_token=BOT_TOKEN6)
+BOT8 = TelegramClient('BOT8', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN9)
 
-BOT6 = TelegramClient('BOT6', API_ID, API_HASH).start(bot_token=BOT_TOKEN7)
-
-BOT7 = TelegramClient('BOT7', API_ID, API_HASH).start(bot_token=BOT_TOKEN8)
-
-BOT8 = TelegramClient('BOT8', API_ID, API_HASH).start(bot_token=BOT_TOKEN9)
-
-BOT9 = TelegramClient('BOT9', API_ID, API_HASH).start(bot_token=BOT_TOKEN10)
+BOT9 = TelegramClient('BOT9', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN10)
 
 print("[INFO] Successfully Started Bot Client Now Loading Plugins!") 

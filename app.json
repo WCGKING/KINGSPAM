@@ -1,12 +1,13 @@
+
 {
     "name": "Deadly Spam Bot",
-    "description": "MOST POWERFUL + STABLE SPAM USERBOTS",
-    "logo": "",
+    "description": "MOST POWERFUL + STABLE SPAMBOTS",
+    "logo": "https://te.legra.ph/file/84ad5652688b46626164e.jpg",
     "keywords": [
         "telegram",
         "telethon",
         "telegram-bot",
-        "deadlySameer",
+        "deadlybot",
         "SpamBots"
     ],
     "repository": "https://t.me/Deadly-Fighters",
@@ -83,41 +84,13 @@
         "value": "",
         "required": true
       },
-       "DATABASE_URL": {
-            "description": "postgres database url",
-            "value": "",
-            "required": true
-        },
-       "SUDO_USER": {
-            "description": "Sudo users id space by space",
-            "value": "",
-            "required": false
-        },
       "OWNER_ID": {
             "description": "owner Id",
             "value": "",
             "required": true
-        },
-        "HEROKU_API_KEY": {
-            "description": "Your Heroku api key to update your bot",
-            "value": "",
-            "required": false 
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Your app name to Update your bot",
-          "value": "",
-          "required": false  
         }
     },
   "stack": "heroku-20",
-  "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
-  ],
   "buildpacks": [
         {
             "url": "heroku/python"

