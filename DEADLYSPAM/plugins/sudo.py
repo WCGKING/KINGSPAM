@@ -23,7 +23,7 @@ OWNER_ID = config.OWNER_ID
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
-    if event.sender_id in str(OWNER_ID):
+    if event.sender_id == OWNER_ID:
        if event.reply_to_msg_id is not None:
            reply_msg = await event.get_reply_message()
            user_id = reply_msg.sender_id
@@ -40,7 +40,7 @@ async def tb(event):
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sdelsudo(?: |$)(.*)" % hl))
 async def delb(event):
-    if event.sender_id in str(OWNER_ID):
+    if event.sender_id == OWNER_ID:
          if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
