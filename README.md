@@ -20,9 +20,6 @@ Mᴀɴᴀɢᴇᴅ Bʏ: [⛓️𝘽𝙡𝙖𝙯𝙚✘ᥫʀ᭡](https://t.me/Elri
 
 <p align="center"><a href="https://heroku.com/deploy?> <img src="https://img.shields.io/badge/Deadly%20On%20Heroku-Blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-###    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴀɪʟᴡᴀʏ 」─
-
-<p align="center"><a href="https://railway.app/new/template/vh-qhN?referralCode=TLYFVL"> <img src="https://railway.app/button.svg" width="220" height="38.45"/></a></p>
 
 
 
