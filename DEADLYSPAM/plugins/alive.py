@@ -10,6 +10,7 @@ if config.ALIVE_PIC:
 else:
     DEADLY_PIC = "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
 
+hl = config.CMD_HNDLR
 
 
 DEADLY = "✯ 𝗗𝗲𝗮𝗱𝗹𝘆 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✯\n\n"
