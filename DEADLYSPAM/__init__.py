@@ -20,8 +20,8 @@ SUDOERS = config.SUDO_USER
 SUDOERS.append(f"config.OWNER_ID") 
 
 # ECHO LIST
-ECHO_BOT = config.LUND
-ECHOUSER = append(f"config.ECHO_BOT") 
+ECHOUSER = config.LUND
+ECHOUSER.append(f"config.ECHOUSER") 
 # CLIENTS
 
 BOT0 = TelegramClient('BOT0', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN)
