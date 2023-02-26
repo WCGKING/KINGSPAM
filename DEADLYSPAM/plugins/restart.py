@@ -1,7 +1,11 @@
 import os
-from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDOERS, CMD_HNDLR as hl
+from DEADLYSPAM import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDOERS
+import config 
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon import events
+
+hl = config.CMD_HNDLR
+
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 @BOT1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
