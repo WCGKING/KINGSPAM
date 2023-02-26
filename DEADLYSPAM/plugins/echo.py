@@ -38,10 +38,10 @@ async def echo(eventevent):
             elif int(user_id) in ECHOUSER:
                      await event.reply("**» ᴜꜱᴇʀ ᴀʟʀᴇᴀᴅʏ ɪɴ ᴇᴄʜᴏʟɪꜱᴛ !!**")
                      return
-                 ECHOUSER.append(user_id) 
-                 await event.reply("ᴇᴄʜᴏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ✅")
+            ECHOUSER.append(user_id) 
+            await event.reply("ᴇᴄʜᴏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ✅")
      else:
-          await event.reply(usage)
+         await event.reply(usage)
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 @BOT1.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
