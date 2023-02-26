@@ -20,6 +20,10 @@ deadlyversion = "v3.0.0"
 SUDOERS = config.SUDO_USER
 SUDOERS.append(OWNER_ID) 
 
+# OWNER COMMAND 
+
+CHUT = config.CHUT
+CHUT.append(OWNER_ID) 
 # ECHO LIST
 ECHOUSER = config.LUND
 ECHOUSER.append(f"config.ECHOUSER") 
