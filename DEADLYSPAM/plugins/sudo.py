@@ -12,12 +12,13 @@ import os
 import asyncio
 import sys
 import git
+import config
 # Changed root to DEADLYSPAM
 from DEADLYSPAM import BOT0, SUDOERS
-from DEADLYSPAM import CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, version
 
+hl = config.CMD_HNDLR 
 OWNER_ID = config.OWNER_ID
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
