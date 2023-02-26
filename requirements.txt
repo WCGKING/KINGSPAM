@@ -1,3 +1,4 @@
+python-dotenv
 python-decouple
 Telethon
 cryptg
