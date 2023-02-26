@@ -1,3 +1,4 @@
+
 # Copyright © 2023-2024 by piroxpower@Github, < https://github.com/piroxpower >.
 #
 # This file is part of < https://github.com/Team-Deadly/DEADLYSPAM > project,
@@ -19,7 +20,6 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, version
 
 hl = config.CMD_HNDLR 
-OWNER_ID = config.OWNER_ID
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
@@ -52,8 +52,3 @@ async def delb(event):
                 await ok.edit(f"ʀᴇᴍᴏᴠᴇᴅ {user_id} ғʀᴏᴍ ꜱᴜᴅᴏʟɪꜱᴛ 💫") 
          else:
              await ok.edit(f"**» ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ ! **")
-
-
-        
-                  
-     
