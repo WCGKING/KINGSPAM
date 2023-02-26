@@ -21,7 +21,7 @@ hl = config.CMD_HNDLR
 @BOT7.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 @BOT8.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
-async def echo(eventevent):
+async def echo(event):
   usage = f"**MODULE NAME : ECHO**\n\nCommand :\n\n `{hl}addecho <reply to a User>`"
   if event.sender_id in SUDOERS:
      if event.reply_to_msg_id is not None:
