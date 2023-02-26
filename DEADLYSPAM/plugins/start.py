@@ -10,7 +10,11 @@ if config.ALIVE_PIC:
 else:
     DEADLY_IMG = "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
 
-OWNER_NAME = OWNER_NAME if config.OWNER_NAME else "DEADLY-USER"
+if config.OWNER_NAME:
+    OWNER_NAME = config.OWNER_NAME
+else:
+    OWNER_NAME = "DEADLY-USER"
+
 OWNER_ID = config.OWNER_ID
 
 Deadly_Button = [
