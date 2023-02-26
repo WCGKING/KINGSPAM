@@ -33,3 +33,13 @@ BOT_TOKEN10 = getenv("BOT_TOKEN10", None)
 # EXTRA VARS
 ALIVE_PIC = getenv("ALIVE_PIC") 
 CMD_HNDLR = getenv("CMD_HNDLR") 
+
+
+
+
+
+
+
+LUND= list(
+    map(int, getenv("LUND", "123456789").split())
+)
