@@ -1,97 +1,86 @@
 {
-    "name": "Deadly Spam Bot",
-    "description": "MOST POWERFUL + STABLE SPAM BOTS",
-    "logo": "",
+    "name": "DEADLY-SPAMBOT",
+    "description": "Telegram most powerfull spambot for spamming in telegram chats",
+    "logo": "https://te.legra.ph/file/84ad5652688b46626164e.jpg",
     "keywords": [
-        "telegram",
-        "telethon",
-        "telegram-bot",
-        "deadly",
-        "SpamBots"
+        "Spambot",
+        "telegram bot",
+        "Telethon"
     ],
-    "repository": "https://t.me/deadly_spam_bot",
-    "website": "https://t.me/DEADLY_SPAMBOT",
-    "success_url": "https://t.me/DEADLY_SPAMBOT",
+    "website": "https://t.me/deadly_spam_bot",
+    "repository": "https://github.com/Team-Deadly/DEADLY-SPAMBOT",
+    "success_url": "https://t.me/TheDeadlyBots",
     "env": {
-             "API_ID": {
-        "description": "Fill Api ID Take this value from My.telegram.org",
-        "value": "",
-        "required": true
-      },
-      "ALIVE_PIC": {
-        "description": "your alive pic or video",
-        "value": "",
-        "required": false
-      },
-      "API_HASH": {
-        "description": "Fill Api hash Take this value from My.telegram.org",
-        "value": "",
-        "required": true
-      },
-     "CMD_HNDLR": {
-            "description": "Custom command handler.",
-            "value": "!",
+        "API_ID": {
+            "description": "your API_ID from my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "your API_HASH from my.telegram.org",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_TOKEN2": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_TOKEN3": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_TOKEN4": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_TOKEN5": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_TOKEN6": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_TOKEN7": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_TOKEN8": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_TOKEN9": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_TOKEN10": {
+            "description": "your bot token from @BotFather",
+            "required": true
+        },
+        "OWNER_NAME": {
+            "description": "fill it with your  name ",
+            "required": true
+        },
+        "ALIVE_PIC": {
+            "description": "fill it with a valid image/video url for your spambot start",
             "required": false
         },
-      "BOT_TOKEN": {
-        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
-        "value": "",
-        "required": true
-      },
-      "BOT_TOKEN2": {
-        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
-        "value": "",
-        "required": true
-      },
-      "BOT_TOKEN3": {
-        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
-        "value": "",
-        "required": true
-      },
-      "BOT_TOKEN4": {
-        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
-        "value": "",
-        "required": true
-      },
-      "BOT_TOKEN5": {
-        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
-        "value": "",
-        "required": true
-      },
-      "BOT_TOKEN6": {
-        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
-        "value": "",
-        "required": true
-      },
-      "BOT_TOKEN7": {
-        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
-        "value": "",
-        "required": true
-      },
-      "BOT_TOKEN8": {
-        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
-        "value": "",
-        "required": true
-      },
-      "BOT_TOKEN9": {
-        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
-        "value": "",
-        "required": true
-      },
-      "BOT_TOKEN10": {
-        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
-        "value": "",
-        "required": true
-        },
-      "OWNER_ID": {
-            "description": "owner Id",
-            "value": "",
+        "OWNER_ID": {
+            "description": "fill Your telegram User id",
             "required": true
+        },
+        "CMD_HNDLR": {
+            "description": "custom command handler for your bot",
+            "required": false,
+            "value": "!"
         }
-    }
-  "buildpacks": [
+    },
+    "addons": [],
+    "buildpacks": [
         {
             "url": "heroku/python"
         }
-    ]
-}
+    ],
+    "stack": "container" 
