@@ -2,6 +2,5 @@ python-dotenv
 python-decouple
 Telethon
 cryptg
-psycopg2-binary
 gitpython
 asyncio
