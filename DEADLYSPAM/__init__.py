@@ -19,11 +19,11 @@ deadlyversion = "v3.0.0"
 HEHE = "5937170640"
 SUDOERS = int(HEHE) 
 OWNER = config.OWNER_ID
-SUDOERS.append(int(OWNER))
+SUDOERS.append(OWNER)
 
 # ECHO LIST
 LUND = "123456789"
-ECHOUSER = int(LUND) 
+ECHOUSER = LUND 
 # CLIENTS
 
 BOT0 = TelegramClient('BOT0', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN)
