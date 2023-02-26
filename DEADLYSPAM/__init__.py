@@ -16,12 +16,12 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 deadlyversion = "v3.0.0"
 
 #SUDOERS
-
+SUDOERS = "5937170640"
 SUDOERS.append(config.OWNER_ID)
 SUDOERS.append(int(5937170640))
 
 # ECHO LIST
-ECHOUSER = (init(93372553)) 
+ECHOUSER = "93372553"
 # CLIENTS
 
 BOT0 = TelegramClient('BOT0', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN)
