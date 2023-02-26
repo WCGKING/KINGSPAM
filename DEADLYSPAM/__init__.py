@@ -1,6 +1,7 @@
 import os
 import sys
 import random
+import config
 import asyncio
 import telethon.utils
 from telethon import TelegramClient, events
