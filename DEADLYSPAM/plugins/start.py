@@ -10,7 +10,7 @@ ALIVE_IMG = config.ALIVE_PIC
 if config.ALIVE_PIC:
     DEADLY_IMG = ALIVE_IMG
 else:
-    DEADLY_IMG = "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
+    DEADLY_IMG = "https://telegra.ph/file/46d7b153e36f36454269e.jpg"
 
 OWNER_INFO = config.OWNER_NAME
 if config.OWNER_NAME:
@@ -22,11 +22,11 @@ OWNER_ID = config.OWNER_ID
 
 Deadly_Button = [
         [
-        Button.url("Cʜᴀɴɴᴇʟ", "https://t.me/Deadly_spambot"),
-        Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/Deadly_spam_bot")
+        Button.url("Cʜᴀɴɴᴇʟ", "https://t.me/aboutagora"),
+        Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/do_jism_ek_jaan_op")
         ],
         [
-        Button.url("• Rᴇᴘᴏ •", "https://github.com/Team-Deadly/DEADLY-SPAMBOT")
+        Button.url("• Rᴇᴘᴏ •", "https://t.me/aboutagora/6")
         ]
         ]
         
@@ -50,10 +50,10 @@ async def start(e):
         user_id = e.sender_id
         mention = f"[{name}](tg://user?id={user_id})"
         myOwner = f"[{OWNER_NAME}](tg://user?id={OWNER_ID})"
-        creator = f"[🇧𝙻𝙰𝚉𝙴](tg://user?id={5256676062})"
+        creator = f"[𝗔𝗚𝗢𝗥𝗔](tg://user?id={5876293679})"
         DEADLY_ON = f"""
 ʜᴇʏ {mention},
-ᴛʜɪs ɪs ᴅᴇᴀᴅʟʏ sᴘᴀᴍʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- {creator}!
+ᴛʜɪs ɪs ғᴄʀ x ᴛᴇᴀᴍ ᴀɢᴏʀᴀ sᴘᴀᴍʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- {creator}!
 
 ᴛʜɪs ʙᴏᴛ ᴏᴡɴᴇʀ:- {myOwner}
 
