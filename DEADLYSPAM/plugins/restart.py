@@ -20,7 +20,7 @@ hl = config.CMD_HNDLR
 async def restart(event):
     await event.delete() 
     if event.sender_id in SUDOERS:
-        await event.reply(f"**ᴅᴇᴀᴅʟʏ-ꜱᴘᴀᴍʙᴏᴛ 🔥: ʀᴇꜱᴛᴀʀᴛɪɴɢ!**")
+        await event.reply(f"**ᴢᴀʀᴀ ʀᴜᴋᴋᴏ ʙʜᴀɪ 🔥: ʀᴇᴅ ʙᴜʟʟ ᴘɪ ʀᴀʜ ʜᴜ!**")
         try:
             await BOT0.disconnect()
         except Exception:
