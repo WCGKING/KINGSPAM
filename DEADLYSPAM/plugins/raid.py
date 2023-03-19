@@ -39,7 +39,7 @@ async def spam(e):
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in DEADLYSPAM:
-                text = f"» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !"
+                text = f"» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴏɴ ʏᴏᴜʀ ᴛʀᴜᴇ ᴘᴀᴘᴀᴊɪ!"
                 await e.reply(text)
             elif int(g) == config.OWNER_ID:
                 text = f"» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ  !"
