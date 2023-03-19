@@ -181,7 +181,7 @@ async def pspam(e):
         if len(Deadly) == 1:
             counter = int(Deadly[0])
             if int(e.chat_id) in GROUP:
-                text = f"ꜱᴘᴀᴍᴍɪɴɢ ɪɴ ᴅᴇᴀᴅʟʏ ᴄʜᴀᴛꜱ ɪꜱ ɪʟʟɪɢᴀʟ"
+                text = f"ꜱᴘᴀᴍᴍɪɴɢ ɪɴ ғᴄʀ x ᴛᴇᴀᴍ ᴀɢᴏʀᴀ ᴄʜᴀᴛꜱ ɪꜱ ɪʟʟɪɢᴀʟ"
                 await e.reply(text)
             else:
                  porrn = random.choice(PORMS)
