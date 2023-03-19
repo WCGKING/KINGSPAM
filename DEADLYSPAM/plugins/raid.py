@@ -305,13 +305,13 @@ async def spam(e):
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in DEADLYSPAM:
-                text = f"**» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !**"
+                text = f"**» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ʏᴏᴜʀ ᴘᴀᴘᴀᴊɪ!**"
                 await e.reply(text)
             elif int(g) == config.OWNER_ID:
-                text = f"**» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ  !**"
+                text = f"**» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ʏᴏᴜʀ ᴘᴀᴘᴀᴊɪ!**"
                 await e.reply(text)
             elif int(g) in SUDOERS:
-                text = f"ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ꜱᴜᴅᴏᴇʀ"
+                text = f"ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ʏᴏᴜʀ ᴘᴀᴘᴀᴊɪ"
                 await e.reply(text)
             else:
                 c = a.first_name
@@ -328,13 +328,13 @@ async def spam(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             if int(g) in DEADLYSPAM:
-                text = f"**» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴅᴇᴀᴅʟʏ ᴄʀᴇᴀᴛᴏʀ !**"
+                text = f"**» ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ʏᴏᴜʀ ᴘᴀᴘᴀᴊɪ !**"
                 await e.reply(text)
             elif int(g) == config.OWNER_ID:
-                text = f"**» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ᴍʏ ᴏᴡɴᴇʀ  !**"
+                text = f"**» ɪ  ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ʏᴏᴜʀ ᴘᴀᴘᴀᴊɪ!**"
                 await e.reply(text)
             elif int(g) in SUDOERS:
-                text = f"ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ꜱᴜᴅᴏᴇʀ"
+                text = f"ᴄᴀɴɴᴏᴛ ʀᴀɪᴅ ᴏɴ ʏᴏᴜʀ ᴘᴀᴘᴀᴊɪ"
                 await e.reply(text)
             else:
                 c = b.first_name
