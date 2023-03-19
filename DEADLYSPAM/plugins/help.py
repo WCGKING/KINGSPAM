@@ -7,9 +7,9 @@ from datetime import datetime
  
 hl = config.CMD_HNDLR
  
-HELP_PIC = "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
+HELP_PIC = "https://telegra.ph/file/46d7b153e36f36454269e.jpg"
 
-DEAD_HELP = "🔥 Dᴇᴀᴅʟʏ Sᴘᴀᴍ Bᴏᴛ 🔥\n\n"
+DEAD_HELP = "🔥 ғᴄʀ x ᴛᴇᴀᴍ ᴀɢᴏʀᴀ ғɪɢʜᴛᴇʀs🔥\n\n"
  
 DEAD_HELP += f"__ᴄᴍɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴅᴇᴀᴅʟʏ ʙᴏᴛ__\n\n"
 
@@ -27,11 +27,11 @@ DEAD_HELP += f" `!raid` - to raid\n `!replyraid` - to active reply raid\n `!drep
 
 DEAD_HELP += f" !pornspam - ɪ ᴡɪʟʟ ꜱᴜɢɢᴇꜱᴛ ᴅᴏɴ'ᴛ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ😂 ↧\n\n"
 
-DEAD_HELP += f"© @TheDeadlyBots\n"
+DEAD_HELP += f"© @Do_Jism_ek_jaan_op\n"
 
 
 @BOT0.on(events.NewMessage(incoming=True, pattern='/help'))
 async def help(event):               
     if event.sender_id in SUDOERS:
-       blaze = [[Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Deadly_spambot"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/Deadly_spam_bot")]]
+       blaze = [[Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/aboutagora"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/fcr_team_agora_fighter")]]
        await BOT0.send_file(event.chat_id, HELP_PIC, caption=DEAD_HELP, buttons=blaze) 
