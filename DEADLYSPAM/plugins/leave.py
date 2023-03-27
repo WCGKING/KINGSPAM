@@ -40,4 +40,4 @@ async def _(event):
         else:
             await event.reply(usage, parse_mode=None, link_preview=None)   
     else:
-        await event.reply("**ᴅᴇᴘʟᴏʏ ʏᴏᴜʀ ᴏᴡɴ ғᴄʀ x ᴛᴇᴀᴍ ᴀɢᴏʀᴀ-ꜱᴘᴀᴍʙᴏᴛ!**") 
+        await event.reply("**ᴅᴇᴘʟᴏʏ ʏᴏᴜʀ ᴏᴡɴ ᴋɪɴɢ x ᴛᴇᴀᴍ ʙʀᴀɴᴅᴇᴅ-ꜱᴘᴀᴍʙᴏᴛ!**") 
