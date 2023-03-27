@@ -1,8 +1,8 @@
 
 {
-    "name": "𝙵𝙲𝚁 𝚇 𝚃𝙴𝙰𝙼 𝙰𝙶𝙾𝚁𝙰 𝚂𝙿𝙰𝙼-𝙱𝙾𝚃",
+    "name": "KING-𝚂𝙿𝙰𝙼-𝙱𝙾𝚃",
     "description": "MOST POWERFUL + STABLE SPAMBOTS",
-    "logo": "https://telegra.ph/file/46d7b153e36f36454269e.jpg",
+    "logo": "https://te.legra.ph/file/2e2f78610814092d61103.jpg",
     "keywords": [
         "telegram",
         "telethon",
@@ -10,23 +10,23 @@
         "deadlybot",
         "SpamBots"
     ],
-    "repository": "https://t.me/FCR_TEAM_AGORA_FIGHTER",
-    "website": "https://t.me/ABOUTAGORA",
-    "success_url": "https://t.me/DO_JISM_EK_JAAN_OP",
+    "repository": "https://github.com/WCGKING/KINGSPAM",
+    "website": "https://t.me/BRANDED_KHUSHI",
+    "success_url": "https://t.me/BRANDED_WORLD",
     "env": {
              "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
-        "value": "8117180",
+        "value": "26319490",
         "required": true
       },
       "ALIVE_PIC": {
         "description": "your alive pic or video",
-        "value": "https://telegra.ph/file/46d7b153e36f36454269e.jpg",
+        "value": "https://te.legra.ph/file/2e2f78610814092d61103.jpg",
         "required": false
       },
       "API_HASH": {
         "description": "Fill Api hash Take this value from My.telegram.org",
-        "value": "34ce938c495ce1b2ae0e97fb237e8695",
+        "value": "e99518c312bd6fcb3e8643bf55e3a339",
         "required": true
       },
      "CMD_HNDLR": {
@@ -86,7 +86,7 @@
       },
       "OWNER_ID": {
             "description": "owner Id",
-            "value": "5876293679",
+            "value": "6258877205",
             "required": true
         }
     },
