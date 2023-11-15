@@ -1,6 +1,6 @@
 <a href="https://youtu.be/aPSeonItsWQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 # 「[𝗞𝗜𝗡𝗚 𝗫 𝗧𝗘𝗔𝗠 𝗕𝗥𝗔𝗡𝗗𝗘𝗗❤️💣](https://t.me/BRANDED_KHUSHI)」
-Mᴀɴᴀɢᴇᴅ Bʏ: [❤️ 𝗕𝗥𝗔𝗡𝗗𝗘𝗗 ✘ 𝗞𝗜𝗡𝗚 ❤️](https://t.me/B_R_A_N_D_E_D_K_I_N_G)
+Mᴀɴᴀɢᴇᴅ Bʏ: [❤️ 𝗕𝗥𝗔𝗡𝗗𝗘𝗗 ✘ 𝗞𝗜𝗡𝗚 ❤️](https://t.me/BRANDEDKING82)
 
 
 <a href="https://https://youtu.be/aPSeonItsWQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
